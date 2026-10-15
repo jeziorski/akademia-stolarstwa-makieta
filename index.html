@@ -1,0 +1,1306 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Kurs stolarstwa online Magia Drewna - Akademia Stolarstwa</title>
+<meta name="description" content="Kurs stolarstwa online od podstaw. 150 lekcji wideo i ponad 50 godzin materiału, 5 instruktorów, połączenia ręcznie i maszynowo, projekty mebli krok po kroku i renowacja.">
+<link rel="icon" href="img/favicon.jpg" type="image/jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#291c0e;          /* braz marki: tekst na jasnym */
+  --text-2:#5e4b38;       /* tekst drugorzedny, 8:1 */
+  --paper:#ffffff;
+  --board:#f5efe6;        /* jasna sklejka */
+  --board-2:#ebe0cf;
+  --line:#e3d6c3;
+  --walnut:#241709;       /* ciemny orzech, tla sekcji */
+  --walnut-2:#33210f;
+  --cream:#f6ecdc;        /* tekst na ciemnym */
+  --cream-2:#d4c2a8;      /* tekst drugorzedny na ciemnym, 9:1 */
+  --orange:#f76a0c;       /* tla przyciskow, tekst na nim ciemny 5,6:1 */
+  --orange-2:#ff8a3d;
+  --rust:#b4470a;         /* akcent tekstu na jasnym 5:1 */
+  --gold:#d9ad6c;         /* akcent na ciemnym 7:1 */
+  --oak:#e9c48a;
+  --ok:#3f6b2a;
+  --radius:16px; --radius-l:24px;
+  --shadow:0 24px 48px -26px rgba(20,12,4,.6);
+  --serif:"Lora",Georgia,serif;
+  --sans:"Inter",system-ui,-apple-system,sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;font-family:var(--sans);font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(38px,5vw,64px);line-height:1.04}
+h2{font-size:clamp(28px,3.4vw,44px)}
+h3{font-size:22px;line-height:1.25}
+p{margin:0 0 1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.section{padding:108px 0;position:relative}
+.section--board{background:var(--board)}
+.section--dark{background:var(--walnut);color:var(--cream)}
+.section > .wrap{position:relative}
+.section--dark .lead,.section--dark .section-head p{color:var(--cream-2)}
+.section--dark h2,.section--dark h3{color:#fff}
+.section--dark .kicker{color:var(--gold)}
+.section--dark .kicker::before{background:var(--gold)}
+.section-head{max-width:760px;margin-bottom:52px}
+.section-head p{color:var(--text-2);font-size:19px;margin-top:16px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;color:var(--rust);margin-bottom:14px}
+.kicker::before{content:"";width:22px;height:2px;background:var(--rust);border-radius:2px}
+.lead{color:var(--text-2);font-size:19px;line-height:1.55}
+.lead strong{color:var(--ink);font-weight:500}
+:focus-visible{outline:3px solid var(--rust);outline-offset:3px;border-radius:6px}
+.section--dark :focus-visible,.hero :focus-visible,.nav :focus-visible,.final :focus-visible,.salebar :focus-visible{outline-color:var(--gold)}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:#fff;color:var(--ink);padding:12px 16px;border-radius:10px;font-weight:600;text-decoration:none}
+.skip:focus{top:12px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+mark.tbc{background:none;color:inherit;border-bottom:2px dashed var(--orange);cursor:help}
+
+/* ikony */
+.ico{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.badge{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;flex:none;color:var(--rust);background:linear-gradient(145deg,#fff6ea,#f1e2cb);border:1px solid #ead8bd}
+.badge .ico{width:26px;height:26px}
+.section--dark .badge{color:var(--gold);background:linear-gradient(145deg,#3d2915,#2c1c0c);border-color:#5a3d20}
+
+/* przyciski */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:600 16px/1 var(--sans);padding:17px 24px;border-radius:12px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,box-shadow .2s,background .2s,border-color .2s}
+.btn .ico{width:20px;height:20px}
+.btn--primary{background:var(--orange);color:var(--ink);box-shadow:0 14px 28px -14px rgba(247,106,12,.9)}
+.btn--primary:hover{background:var(--orange-2);transform:translateY(-2px)}
+.btn--ghost-dark{background:transparent;border-color:rgba(246,236,220,.35);color:var(--cream)}
+.btn--ghost-dark:hover{border-color:var(--cream)}
+
+/* pasek sprzedazy */
+.salebar{background:#140c04;color:var(--cream-2);font-size:14px;text-align:center;padding:10px 16px}
+.salebar b{color:var(--gold);font-weight:600}
+.salebar a{color:#fff;font-weight:600}
+
+/* nawigacja */
+.nav{position:sticky;top:0;z-index:50;background:var(--walnut);border-bottom:1px solid transparent;transition:border-color .2s,background .2s}
+.nav.is-stuck{border-color:rgba(217,173,108,.25)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:24px}
+.nav__logo img{height:42px;width:auto}
+.nav__links{display:flex;gap:28px;list-style:none;margin:0;padding:0;font-size:15px;font-weight:500}
+.nav__links a{text-decoration:none;color:var(--cream-2)}
+.nav__links a:hover{color:#fff}
+.nav .btn{padding:12px 18px;font-size:15px}
+.nav__toggle{display:none;align-items:center;gap:8px;background:none;border:1px solid rgba(246,236,220,.35);color:var(--cream);border-radius:10px;padding:9px 12px;font:600 14px var(--sans);cursor:pointer}
+.mnav{background:var(--walnut);border-top:1px solid rgba(217,173,108,.25);padding:8px 16px 16px}
+.mnav a{display:block;padding:14px 4px;color:var(--cream);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(217,173,108,.15)}
+
+/* hero */
+.hero{position:relative;padding:64px 0 0;overflow:hidden;background:var(--walnut);color:var(--cream)}
+.hero__glow{position:absolute;width:760px;height:760px;right:-120px;top:-180px;border-radius:50%;background:radial-gradient(circle,rgba(247,140,40,.2),transparent 62%);pointer-events:none}
+.hero__grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(217,173,108,.35);border-radius:999px;padding:6px 16px 6px 6px;font-size:14px;color:var(--cream-2);margin-bottom:26px}
+.pill img{width:30px;height:30px;border-radius:50%;object-fit:cover}
+.pill b{color:#fff;font-weight:600}
+.hero h1{color:#fff}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--gold)}
+.hero .lead{margin:24px 0 32px;max-width:560px;color:var(--cream-2)}
+.hero .lead strong{color:#fff}
+.hero__cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.proof{display:flex;align-items:center;gap:14px;margin-top:34px;font-size:15px;color:var(--cream-2)}
+.faces{display:flex;flex:none}
+.faces img{width:42px;height:42px;border-radius:50%;border:3px solid var(--walnut);object-fit:cover;margin-left:-12px}
+.faces img:first-child{margin-left:0}
+.proof b{color:#fff}
+.hero__media{position:relative;height:570px}
+.hero__photo{position:absolute;border-radius:var(--radius-l);overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.7)}
+.hero__photo img{width:100%;height:100%;object-fit:cover}
+.hero__photo--a{inset:0 70px 120px 0}
+.hero__photo--b{width:46%;height:52%;right:0;bottom:0;border:6px solid var(--walnut-2)}
+.tag{position:absolute;background:rgba(255,250,242,.97);color:var(--ink);border-radius:14px;padding:12px 16px;box-shadow:0 18px 40px -16px rgba(0,0,0,.6);font-size:14px;line-height:1.35;display:flex;gap:12px;align-items:center}
+.tag strong{display:block;font-size:15px}
+.tag span{color:var(--text-2)}
+.tag .badge{width:38px;height:38px;border-radius:10px}
+.tag .badge .ico{width:20px;height:20px}
+.tag--1{left:-18px;top:46px}
+.tag--2{left:22px;bottom:150px}
+.tag--3{right:16px;top:-6px}
+
+/* linijka */
+.ruler{position:relative;margin-top:76px;height:64px;background:
+  repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 12px) bottom/100% 12px no-repeat,
+  repeating-linear-gradient(90deg,var(--ink) 0 2px,transparent 2px 60px) bottom/100% 22px no-repeat,
+  var(--oak);border-top:1px solid #c79a55;overflow:hidden}
+.ruler__track{position:absolute;top:10px;left:0;right:0;max-width:var(--wrap);margin:0 auto;padding:0 28px;font-family:var(--serif);font-size:17px;font-weight:600;color:var(--ink);white-space:nowrap;overflow:hidden}
+.ruler__track > span{display:flex;justify-content:space-between;gap:28px}
+.ruler__track > span + span{display:none}
+
+/* 2 kolumny bez kart */
+.split{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
+.split__head{position:sticky;top:120px}
+.split__head .section-head{margin-bottom:28px}
+.rows{list-style:none;margin:0;padding:0}
+.rows li{display:grid;grid-template-columns:52px 1fr;gap:22px;padding:26px 0;border-top:1px solid var(--line)}
+.rows li:last-child{border-bottom:1px solid var(--line)}
+.rows q{display:block;font-family:var(--serif);font-size:22px;line-height:1.35;font-weight:500;quotes:none;margin-bottom:8px}
+.rows p{color:var(--text-2);font-size:16px;margin:0}
+.answer{display:flex;gap:16px;align-items:flex-start;background:var(--walnut);color:var(--cream-2);border-radius:var(--radius);padding:24px;position:relative;overflow:hidden}
+.answer > *{position:relative}
+.answer b{color:#fff}
+.answer .ico{color:var(--gold);margin-top:3px}
+.answer p{margin:0 0 14px}
+
+/* przed i po */
+.ba__switch{display:inline-flex;gap:6px;padding:6px;background:var(--board-2);border-radius:999px;margin-bottom:30px}
+.ba__switch button{font:600 15px var(--sans);border:0;background:none;color:var(--text-2);padding:12px 22px;border-radius:999px;cursor:pointer;transition:background .25s,color .25s}
+.ba__switch button[aria-pressed="true"]{background:var(--walnut);color:#fff}
+.ba__list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 56px}
+.ba__list li{display:grid;grid-template-columns:52px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--line);align-items:start}
+.ba__topic{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:var(--text-2);margin-bottom:4px}
+.ba__state{font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px}
+.ba[data-state="przed"] .ba__state{background:#f6e3d9;color:#9a3b08}
+.ba[data-state="po"] .ba__state{background:#e3eedb;color:var(--ok)}
+.ba[data-state="po"] .badge{color:var(--ok);background:linear-gradient(145deg,#f1f8ec,#e0ecd6);border-color:#cfe0c2}
+.ba__text{font-size:18px;line-height:1.5;transition:opacity .2s,transform .2s}
+.ba.is-swapping .ba__text{opacity:0;transform:translateY(6px)}
+
+/* dla kogo */
+.tabs__list{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:40px}
+.tabs__list button{display:inline-flex;align-items:center;gap:10px;font:600 15px var(--sans);border:1px solid var(--line);background:#fff;color:var(--ink);padding:11px 18px 11px 14px;border-radius:999px;cursor:pointer;transition:background .2s,color .2s}
+.tabs__list button .ico{width:20px;height:20px;color:var(--rust)}
+.tabs__list button[aria-selected="true"]{background:var(--walnut);color:#fff;border-color:var(--walnut)}
+.tabs__list button[aria-selected="true"] .ico{color:var(--gold)}
+.persona{display:grid;grid-template-columns:1fr 1fr;gap:64px;animation:fadeIn .35s ease both}
+.persona h3{font-size:32px;margin-bottom:16px}
+.persona__text{color:var(--text-2);font-size:18px}
+.persona__goal{display:flex;gap:16px;margin-top:28px;padding-top:24px;border-top:2px solid var(--ink);font-size:18px}
+.persona__goal b{display:block;font-size:14px;color:var(--rust);margin-bottom:2px}
+.persona h4{margin:0 0 6px;font-size:14px;color:var(--text-2);font-weight:600}
+.persona ul{margin:0 0 30px;padding:0;list-style:none}
+.persona li{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:16px}
+.persona li .ico{width:20px;height:20px;color:var(--rust);margin-top:2px}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}}
+
+/* tasma: droga */
+.path{position:relative;display:grid;grid-template-columns:120px 1fr}
+.tape{position:sticky;top:110px;height:calc(100vh - 160px);max-height:640px;align-self:start;display:flex;justify-content:center}
+.tape__body{position:relative;width:56px;height:100%;border-radius:10px;background:var(--board-2);overflow:hidden;border:1px solid var(--line)}
+.tape__fill{position:absolute;inset:0;clip-path:inset(0 0 100% 0);background:
+  repeating-linear-gradient(180deg,var(--ink) 0 1px,transparent 1px 10px) left/14px 100% no-repeat,
+  repeating-linear-gradient(180deg,var(--ink) 0 2px,transparent 2px 50px) left/26px 100% no-repeat,#f9b233}
+.tape__count{position:absolute;bottom:10px;left:0;right:0;text-align:center;font:700 12px var(--sans);color:var(--ink)}
+.tape__hook{position:absolute;top:-6px;left:50%;width:70px;height:14px;transform:translateX(-50%);background:#8d8d8d;border-radius:3px;z-index:2}
+.stages{list-style:none;margin:0;padding:0}
+.stage{display:grid;grid-template-columns:64px 1fr 250px;gap:28px;padding:40px 0;border-top:1px solid var(--line);align-items:start}
+.stage:last-child{border-bottom:1px solid var(--line)}
+.stage__no{font:600 44px/1 var(--serif);color:#d8c7ae;transition:color .4s}
+.stage.is-on .stage__no{color:var(--rust)}
+.stage__title{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.stage__title .badge{width:44px;height:44px;border-radius:12px}
+.stage h3{font-size:28px}
+.stage p{color:var(--text-2);margin:0 0 10px}
+.stage__result{font-size:18px;color:var(--ink)!important}
+.stage__meta{border-left:2px solid var(--oak);padding:4px 0 4px 20px;font-size:15px}
+.stage__meta b{display:block;font-size:30px;font-family:var(--serif);line-height:1.1}
+.stage__meta span{color:var(--text-2)}
+.stage__meta ul{margin:10px 0 0;padding:0;list-style:none;color:var(--text-2)}
+.stage__meta li{padding:3px 0}
+
+/* polaczenia */
+.joints{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
+.seg{display:inline-flex;background:rgba(255,255,255,.07);border:1px solid rgba(217,173,108,.25);border-radius:999px;padding:6px;margin:8px 0 22px}
+.seg button{display:inline-flex;align-items:center;gap:8px;border:0;background:none;font:600 15px var(--sans);padding:11px 18px;border-radius:999px;color:var(--cream-2);cursor:pointer;transition:background .2s,color .2s}
+.seg button .ico{width:18px;height:18px}
+.seg button[aria-pressed="true"]{background:var(--orange);color:var(--ink)}
+.joints__list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.joints__list li{display:flex;gap:10px;align-items:center;padding:11px 0;border-bottom:1px solid rgba(217,173,108,.18);font-size:16px;color:var(--cream);animation:fadeIn .3s ease both}
+.joints__list li .ico{width:18px;height:18px;color:var(--gold)}
+.joints__note{font-size:15px;color:var(--cream-2);margin-top:18px}
+.joints__photo{position:relative;margin:0;border-radius:var(--radius-l);overflow:hidden;box-shadow:0 30px 60px -20px rgba(0,0,0,.7);aspect-ratio:7/5}
+.joints__photo img{width:100%;height:100%;object-fit:cover}
+.joints__photo figcaption{position:absolute;left:16px;bottom:16px;background:rgba(36,23,9,.85);color:var(--cream);border-radius:10px;padding:8px 12px;font-size:14px}
+
+/* galeria */
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:130px;gap:14px}
+.gallery button{border:0;padding:0;border-radius:var(--radius);overflow:hidden;cursor:zoom-in;position:relative;background:var(--board)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gallery button:hover img{transform:scale(1.05)}
+.gallery figcaption{position:absolute;left:12px;bottom:12px;background:rgba(36,23,9,.85);color:var(--cream);border-radius:8px;padding:6px 10px;font-size:13px;font-weight:600}
+.g1{grid-column:span 7;grid-row:span 3}.g2{grid-column:span 5;grid-row:span 3}
+.g3,.g4,.g5{grid-column:span 4;grid-row:span 2}
+
+/* modal */
+dialog.modal{border:0;padding:0;background:transparent;max-width:min(1100px,94vw);width:100%;overflow:visible}
+dialog.modal::backdrop{background:rgba(20,12,4,.9)}
+dialog.modal img{border-radius:12px;max-height:84vh;width:auto;margin:0 auto}
+dialog.modal .frame{position:relative;aspect-ratio:16/9;width:100%;border-radius:12px;overflow:hidden;background:#000}
+dialog.modal iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+dialog.modal p{color:var(--cream);text-align:center;margin:12px 0 0}
+.modal__close{position:fixed;top:18px;right:18px;width:48px;height:48px;border-radius:50%;border:0;background:#fff;cursor:pointer;display:grid;place-items:center;color:var(--ink)}
+
+/* co dostajesz: bento 2 kolumny bez kart */
+.bento{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.bento__photo{position:sticky;top:110px;margin:0;border-radius:var(--radius-l);overflow:hidden;box-shadow:var(--shadow)}
+.bento__photo img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.bento__photo figcaption{position:absolute;left:0;right:0;bottom:0;padding:60px 22px 20px;background:linear-gradient(transparent,rgba(20,12,4,.9));color:var(--cream);font-size:15px}
+.bento__photo figcaption b{display:block;font-family:var(--serif);font-size:22px;color:#fff;margin-bottom:2px}
+.perks{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.perk{padding:28px 0;border-top:1px solid #dccbb1}
+.perk .badge{margin-bottom:16px}
+.perk h3{font-size:20px;margin-bottom:8px}
+.perk p{color:var(--text-2);font-size:15.5px;margin:0}
+
+/* mistrzowie: panele na scianie warsztatu */
+.masters-wall::after{content:"";position:absolute;inset:0;background:radial-gradient(circle,rgba(0,0,0,.5) 2.4px,transparent 3px) 0 0/34px 34px;opacity:.5;pointer-events:none}
+.masters{display:flex;gap:10px;height:500px;position:relative;z-index:1}
+.master{position:relative;flex:1;min-width:0;border-radius:var(--radius-l);overflow:hidden;background:linear-gradient(170deg,#4a3119,#2a1a0b);border:1px solid rgba(217,173,108,.22);transition:flex .45s cubic-bezier(.3,.7,.2,1),border-color .3s}
+.master:not(.is-active):hover{border-color:rgba(217,173,108,.6)}
+.master.is-active{flex:7}
+.master__btn{position:absolute;inset:0;border:0;background:none;padding:0;cursor:pointer;z-index:2;border-radius:inherit}
+.master.is-active .master__btn{pointer-events:none}
+.master__closed{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;padding:22px 0;gap:18px;transition:opacity .3s}
+.master.is-active .master__closed{opacity:0}
+.master__closed img{width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid var(--gold)}
+.master__closed span{writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--serif);font-size:22px;font-weight:600;color:var(--cream);white-space:nowrap}
+.master__closed small{writing-mode:vertical-rl;transform:rotate(180deg);font-size:13px;color:var(--gold);white-space:nowrap;margin-top:auto}
+.master__open{position:absolute;inset:0;display:grid;grid-template-columns:210px 1fr;gap:36px;padding:40px;opacity:0;transform:translateY(12px);transition:opacity .35s .2s,transform .35s .2s;pointer-events:none}
+.master.is-active .master__open{opacity:1;transform:none;pointer-events:auto}
+.master__portrait{position:relative;align-self:start}
+.master__portrait img{width:210px;height:210px;border-radius:20px;object-fit:cover;border:4px solid rgba(217,173,108,.5)}
+.master__badge{position:absolute;right:-14px;bottom:-14px;background:var(--orange);color:var(--ink);font-weight:700;font-size:13px;padding:8px 12px;border-radius:10px;box-shadow:0 10px 20px -8px rgba(0,0,0,.6)}
+.master__open h3{font-size:34px;color:#fff;margin-bottom:6px}
+.master__role{display:inline-flex;align-items:center;gap:8px;color:var(--gold);font-weight:600;font-size:15px;margin-bottom:16px}
+.master__role .ico{width:20px;height:20px}
+.master__story{color:var(--cream-2);font-size:17px;margin-bottom:18px;max-width:520px}
+.master__facts{list-style:none;padding:0;margin:0;max-width:540px}
+.master__facts li{display:flex;gap:12px;padding:10px 0;border-top:1px solid rgba(217,173,108,.18);color:var(--cream);font-size:15.5px}
+.master__facts .ico{width:20px;height:20px;color:var(--gold);margin-top:1px}
+.team-sum{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px;position:relative;z-index:1}
+.team-sum div{border-top:1px solid rgba(217,173,108,.3);padding-top:16px;font-size:15px;color:var(--cream-2)}
+.team-sum b{display:block;font:600 40px/1.1 var(--serif);color:#fff}
+
+/* opinie: multislider */
+.reviews-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.marquee{overflow:hidden;padding:6px 0 14px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.marquee + .marquee{margin-top:14px}
+.marquee__track{display:flex;gap:20px;width:max-content;animation:marquee 70s linear infinite;will-change:transform}
+.marquee--rev .marquee__track{animation-direction:reverse;animation-duration:80s}
+.marquee:hover .marquee__track,.marquee:focus-within .marquee__track,.marquee.is-paused .marquee__track,.ruler.is-paused .ruler__track{animation-play-state:paused}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.vcard{width:420px;flex:none;border:0;padding:0;background:none;text-align:left;cursor:pointer;color:inherit;font:inherit}
+.vcard__thumb{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;box-shadow:var(--shadow)}
+.vcard__thumb img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.vcard:hover .vcard__thumb img{transform:scale(1.05)}
+.vcard__thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(20,12,4,.75))}
+.vcard__play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:var(--orange);display:grid;place-items:center;z-index:1;box-shadow:0 0 0 8px rgba(247,106,12,.25);transition:box-shadow .3s}
+.vcard:hover .vcard__play{box-shadow:0 0 0 14px rgba(247,106,12,.25)}
+.vcard__play svg{width:24px;height:24px;fill:var(--ink);margin-left:4px}
+.vcard__tag{position:absolute;left:12px;top:12px;z-index:1;background:rgba(255,250,242,.95);color:var(--ink);font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px}
+.vcard__len{position:absolute;right:12px;bottom:12px;z-index:1;color:#fff;font-size:13px;font-weight:600}
+.vcard__thumb{display:block}
+.vcard__title{display:block;font-family:var(--serif);font-weight:600;font-size:18px;margin:14px 2px 0;line-height:1.35}
+.tcard{width:380px;flex:none;background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}
+.tcard blockquote{margin:0 0 14px;font-family:var(--serif);font-size:18px;line-height:1.45}
+.tcard footer{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--text-2)}
+.tcard footer b{color:var(--ink)}
+.tcard .av{width:38px;height:38px;border-radius:50%;background:var(--board-2);display:grid;place-items:center;font-weight:700;color:var(--rust);flex:none}
+.stars{color:#c06a00;letter-spacing:2px;margin-bottom:8px}
+.tcard--todo{border-style:dashed;background:#fffaf3}
+.tcard--todo blockquote{font-family:var(--sans);font-size:15px;color:var(--text-2)}
+.slider-ctrl button{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 16px;font:600 14px var(--sans);cursor:pointer;color:var(--ink)}
+.slider-ctrl .ico{width:18px;height:18px}
+
+/* porownanie */
+.compare-wrap{overflow-x:auto}
+.compare{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:0;font-size:15px}
+.compare col.c-q{width:24%}
+.compare th,.compare td{padding:18px;text-align:left;vertical-align:top;border-bottom:1px solid #dccbb1}
+.compare thead th{font-size:14px;color:var(--text-2);font-weight:600;vertical-align:bottom;padding-top:14px;padding-bottom:14px}
+.compare thead th.us{background:var(--walnut);color:#fff;border-radius:14px 14px 0 0}
+.compare tbody th{font-weight:600;line-height:1.4;padding-top:20px}
+.compare td.us{background:#fff;box-shadow:inset 2px 0 0 var(--walnut),inset -2px 0 0 var(--walnut)}
+.compare tr:last-child td.us{box-shadow:inset 2px 0 0 var(--walnut),inset -2px 0 0 var(--walnut),inset 0 -2px 0 var(--walnut);border-radius:0 0 14px 14px}
+.st{display:flex;align-items:center;gap:6px;min-height:24px;font-weight:700;line-height:1.3}
+.st .ico{width:18px;height:18px;stroke-width:2.4;flex:none}
+.st.y{color:var(--ok)}.st.n{color:#9a3b08}.st.p{color:#8a5a12}
+.st.price{display:block;font-family:var(--serif);font-size:19px;color:var(--ink)}
+.compare .note{display:block;margin-top:6px;font-size:14px;line-height:1.45;color:var(--text-2)}
+.compare td.us .note{color:var(--ink)}
+.compare-note{display:flex;gap:14px;margin-top:22px;font-size:15px;color:var(--text-2);max-width:860px}
+.compare-note .ico{color:var(--rust)}
+@media (max-width:720px){
+  .compare,.compare tbody,.compare tr,.compare th,.compare td{display:block;width:auto}
+  .compare thead,.compare colgroup{display:none}
+  .compare tr{margin-bottom:18px;border:1px solid #dccbb1;border-radius:16px;overflow:hidden;background:#fffaf2}
+  .compare tbody th{padding:14px 16px;background:var(--walnut);color:#fff;border:0}
+  .compare td{display:grid;grid-template-columns:42% 1fr;gap:4px 12px;padding:12px 16px;border-bottom:1px solid var(--line)}
+  .compare td:last-child{border-bottom:0}
+  .compare td::before{content:attr(data-label);grid-row:span 2;font-size:13px;font-weight:600;color:var(--text-2);padding-top:2px}
+  .compare td.us,.compare tr:last-child td.us{box-shadow:none;border-radius:0;background:#fff4e6}
+  .compare .note{margin-top:0}
+}
+
+/* program */
+.prog__tools{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-bottom:22px}
+.prog__search{flex:1;min-width:240px;max-width:420px;position:relative}
+.prog__search input{width:100%;font:16px var(--sans);padding:14px 16px 14px 46px;border:1px solid #8f7a5e;border-radius:12px;background:#fff;color:var(--ink)}
+.prog__search .ico{position:absolute;left:15px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--text-2)}
+.prog__stats{font-size:15px;color:var(--text-2)}
+.prog__stats b{color:var(--ink)}
+.modules{display:grid;grid-template-columns:1fr 1fr;gap:0 48px;align-items:start}
+.module{border-top:1px solid var(--line)}
+.module summary{list-style:none;cursor:pointer;padding:16px 0;display:grid;grid-template-columns:46px 1fr auto 20px;gap:12px;align-items:center}
+.module summary::-webkit-details-marker{display:none}
+.module__roman{font:600 15px var(--serif);color:var(--rust);background:var(--board);border:1px solid var(--line);border-radius:8px;height:36px;display:grid;place-items:center}
+.module__title{font-weight:600;font-size:16px;line-height:1.35}
+.module__count{font-size:13px;color:var(--text-2);white-space:nowrap}
+.module summary .ico{width:18px;height:18px;color:var(--rust);transition:transform .25s}
+.module[open] summary .ico{transform:rotate(180deg)}
+.module ol{margin:0;padding:0 0 18px 58px;color:var(--text-2);font-size:15px}
+.module li{padding:3px 0}
+.module li.hit{color:var(--ink);background:#ffe9d3;border-radius:4px}
+.module.is-hidden{display:none}
+
+/* probka */
+.sample{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.browser{border-radius:14px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:#fff}
+.browser__bar{display:flex;align-items:center;gap:7px;padding:11px 14px;background:var(--board);border-bottom:1px solid var(--line)}
+.browser__bar i{width:10px;height:10px;border-radius:50%;background:#d8cbb8}
+.browser__bar span{margin-left:12px;font-size:12px;color:var(--text-2);background:#fff;border-radius:6px;padding:3px 10px}
+.lessons-free{list-style:none;padding:0;margin:18px 0 24px}
+.lessons-free li{display:flex;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #dccbb1;font-size:16px}
+.lessons-free .ico{color:var(--rust)}
+.form{display:grid;gap:12px}
+.form label{font-size:14px;font-weight:600}
+.form input[type=text],.form input[type=email]{width:100%;font:16px var(--sans);padding:14px 16px;border:1px solid #8f7a5e;border-radius:12px;margin-top:6px;color:var(--ink)}
+.form .consent{display:flex;gap:10px;font-size:13px;font-weight:400;color:var(--text-2);align-items:flex-start}
+.form .consent input{margin-top:3px;width:18px;height:18px;flex:none;accent-color:var(--rust)}
+.form .consent a{color:var(--rust)}
+.form [aria-invalid="true"]{border-color:#9a3b08;outline:2px solid #9a3b08}
+.form__msg{font-size:15px;color:var(--ok);font-weight:600;min-height:1.4em}
+
+/* cena */
+.price{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.stack{list-style:none;padding:0;margin:28px 0 0}
+.stack li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid rgba(217,173,108,.18);font-size:16px}
+.stack li span:first-child{display:flex;gap:10px;align-items:center}
+.stack li .ico{width:18px;height:18px;color:var(--gold)}
+.stack li span:last-child{white-space:nowrap;color:var(--gold)}
+.stack li.sum{border-bottom:0;font-weight:600;color:#fff}
+.price-card{background:#fffaf2;color:var(--ink);border-radius:var(--radius-l);padding:36px;box-shadow:0 30px 60px -20px rgba(0,0,0,.7);position:relative}
+.price-card > *{position:relative}
+.price-card__status{font-size:14px;font-weight:600;color:var(--rust);margin-bottom:8px}
+.price-card__amount{font:700 64px/1 var(--serif);letter-spacing:-.02em}
+.price-card__amount small{font:500 17px var(--sans);color:var(--text-2);margin-left:6px}
+.price-card__alt{font-size:15px;color:var(--text-2);margin:10px 0 22px}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:0 0 24px}
+.countdown div{background:var(--walnut);color:#fff;border-radius:12px;text-align:center;padding:10px 4px}
+.countdown b{display:block;font:600 28px/1.1 var(--serif)}
+.countdown span{font-size:12px;color:var(--cream-2)}
+.price-card .btn{width:100%}
+.incl{list-style:none;padding:0;margin:24px 0 0;font-size:15px}
+.incl li{display:flex;gap:10px;padding:9px 0;border-top:1px solid var(--line)}
+.incl .ico{width:20px;height:20px;color:var(--ok)}
+.guarantee{display:flex;gap:18px;align-items:flex-start;margin-top:30px;padding-top:28px;border-top:1px solid rgba(217,173,108,.25)}
+.guarantee p{margin:0;color:var(--cream-2);font-size:16px}
+.guarantee b{color:#fff}
+
+/* faq */
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;font-weight:600;font-size:18px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:12px;height:12px;border-right:2px solid var(--rust);border-bottom:2px solid var(--rust);transform:translateY(-70%) rotate(45deg);transition:transform .25s}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+.faq details p{color:var(--text-2);margin:0 0 22px}
+.faq-contact{display:flex;gap:14px;align-items:center;color:var(--text-2);font-size:16px}
+.faq-contact a{color:var(--rust);font-weight:600}
+
+/* final */
+.final{background:var(--walnut);color:var(--cream);position:relative;overflow:hidden}
+.final__grid{position:relative;display:grid;grid-template-columns:1fr 1fr;min-height:560px}
+.final__photo{position:relative}
+.final__photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 40%}
+.final__photo::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 55%,var(--walnut))}
+.final__text{padding:96px 28px 96px 56px;display:flex;flex-direction:column;justify-content:center;max-width:620px}
+.final__text h2{color:#fff;margin-bottom:18px}
+.final__text .lead{color:var(--cream-2);margin-bottom:30px}
+.final__text .btn{align-self:flex-start}
+.final__who{margin-top:24px;font-size:15px;color:var(--cream-2)}
+footer.site{background:#140c04;color:#cdbba3;padding:44px 0;font-size:14px}
+@media (max-width:720px){footer.site{padding-bottom:96px}}
+footer.site .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+footer.site a{color:var(--cream)}
+.sticky-cta{display:none}
+
+/* animacje */
+@media (prefers-reduced-motion:no-preference){
+  .hero__text > *{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+  .hero__text > *:nth-child(2){animation-delay:.08s}
+  .hero__text > *:nth-child(3){animation-delay:.16s}
+  .hero__text > *:nth-child(4){animation-delay:.24s}
+  .hero__text > *:nth-child(5){animation-delay:.32s}
+  .hero__photo--a{animation:rise 1s .1s cubic-bezier(.2,.7,.2,1) both}
+  .hero__photo--b{animation:rise 1s .3s cubic-bezier(.2,.7,.2,1) both}
+  .tag{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+  .tag--1{animation-delay:.6s}.tag--2{animation-delay:.75s}.tag--3{animation-delay:.9s}
+  [data-reveal]{opacity:0;transform:translateY(18px);transition:opacity .6s ease-out,transform .6s ease-out}
+  [data-reveal].is-in{opacity:1;transform:none}
+}
+@keyframes rise{from{opacity:0;transform:translateY(22px)}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .marquee{overflow-x:auto;-webkit-mask-image:none;mask-image:none}
+}
+
+/* responsywnosc */
+@media (max-width:1024px){
+  .nav__links{display:none}
+  .nav__toggle{display:inline-flex}
+  .hero__grid,.joints,.sample,.price,.persona,.split,.bento,.final__grid{grid-template-columns:1fr}
+  .split{gap:20px}.split__head,.bento__photo{position:static}
+  .hero__media{height:470px;max-width:620px}
+  .stage{grid-template-columns:52px 1fr}
+  .stage__meta{grid-column:2}
+  .modules{grid-template-columns:1fr}
+  .masters{flex-direction:column;height:auto}
+  .master{flex:none!important}
+  .master__closed{position:relative;flex-direction:row;padding:14px 20px;gap:16px}
+  .master.is-active .master__closed{display:none}
+  .master__closed img{width:52px;height:52px}
+  .master__closed span,.master__closed small{writing-mode:horizontal-tb;transform:none}
+  .master__closed small{margin:0 0 0 auto;text-align:right}
+  .master__open{position:relative;grid-template-columns:1fr;padding:28px;gap:24px}
+  .master:not(.is-active) .master__open{display:none}
+  .master__portrait img{width:140px;height:140px}
+  .master__portrait{justify-self:start}
+  .team-sum{grid-template-columns:1fr 1fr}
+  .final__photo{min-height:320px}
+  .final__photo::after{background:linear-gradient(180deg,transparent 50%,var(--walnut))}
+  .final__text{padding:40px 28px 110px}
+}
+@media (max-width:720px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .section{padding:72px 0}
+  .nav .wrap{height:62px}
+  .nav__logo img{height:34px}
+  .nav .btn{display:none}
+  .hero{padding-top:32px}
+  .hero__media{height:340px}
+  .hero__photo--a{inset:0 30px 90px 0}
+  .tag{font-size:13px;padding:9px 12px}
+  .tag .badge{display:none}
+  .tag--1{left:0;top:20px}.tag--2{left:8px;bottom:110px}.tag--3{display:none}
+  .ruler{margin-top:48px}
+  .rows li,.ba__list li{grid-template-columns:44px 1fr;gap:14px}
+  .rows .badge,.ba__list .badge{width:44px;height:44px}
+  .rows q{font-size:20px}
+  .ba__list{grid-template-columns:1fr}
+  .ba__switch{display:flex}.ba__switch button{flex:1;padding:12px 8px}
+  .path{grid-template-columns:44px 1fr}
+  .tape__body{width:28px}.tape__count{display:none}.tape__hook{width:40px}
+  .stage{grid-template-columns:1fr;gap:12px;padding:30px 0 30px 14px}
+  .stage__meta{grid-column:auto}
+  .stage__no{font-size:32px}
+  .joints__list{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+  .g1{grid-column:span 2;grid-row:span 2}
+  .g2,.g3,.g4,.g5{grid-column:span 1;grid-row:span 1}
+  .gallery figcaption{display:none}
+  .perks{grid-template-columns:1fr}
+  .master__closed small{display:none}
+  .master__open{padding:22px}
+  .master__open h3{font-size:28px}
+  .vcard{width:290px}.tcard{width:290px}
+  .price-card{padding:24px}
+  .price-card__amount{font-size:52px}
+  .team-sum b{font-size:30px}
+  .sticky-cta{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;transform:translateY(140%);transition:transform .3s}
+  .sticky-cta.is-on{transform:none}
+  .sticky-cta .btn{width:100%;box-shadow:0 10px 30px -8px rgba(20,12,4,.7)}
+}
+</style>
+</head>
+<body>
+
+<!-- zestaw ikon -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-play" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M10 9.5v5l4.5-2.5z"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M4 7h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a1 1 0 0 1-1-1z"/><path d="M4 7l11-3v3"/><path d="M16 13.5h2"/></symbol>
+  <symbol id="i-crack" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="1.5"/><path d="M9 7l2 3-2 2 3 2-1 3"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"/><circle cx="12" cy="10" r="2.2"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.5h8M8 12.5h5"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></symbol>
+  <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.4 10.5h10.2L20 8H6.3"/><circle cx="9" cy="19" r="1.4"/><circle cx="17" cy="19" r="1.4"/></symbol>
+  <symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 3l6 8h-3l4 5H5l4-5H6z"/><path d="M12 16v5"/></symbol>
+  <symbol id="i-chair" viewBox="0 0 24 24"><path d="M7 3v9h10V3"/><path d="M6 12h12v3H6z"/><path d="M7 15v6M17 15v6"/></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 7h8M8 11h1M12 11h1M8 15h1M12 15h1M16 11v7"/></symbol>
+  <symbol id="i-chisel" viewBox="0 0 24 24"><path d="M14 3l7 7-3 3-7-7z"/><path d="M11 6l-7.5 7.5a2 2 0 0 0 0 2.8l2.2 2.2a2 2 0 0 0 2.8 0L16 11"/></symbol>
+  <symbol id="i-dovetail" viewBox="0 0 24 24"><path d="M3 4h18v16H3z"/><path d="M3 9h4l-1.5 6H3M21 9h-4l1.5 6H21M10 4l-1 5h6l-1-5"/></symbol>
+  <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></symbol>
+  <symbol id="i-brush" viewBox="0 0 24 24"><path d="M14 4l6 6-7 7-6-6z"/><path d="M7 11l-3 3c-1 1-1 3 0 4s3 1 4 0l3-3"/></symbol>
+  <symbol id="i-hammer" viewBox="0 0 24 24"><path d="M13 7l4-4 4 4-4 4z"/><path d="M15 9L5 19a1.5 1.5 0 0 1-2-2L13 7"/></symbol>
+  <symbol id="i-saw" viewBox="0 0 24 24"><path d="M4 14l12-10 4 4-12 10z"/><path d="M6 16l1-2M9 14l1-2M12 11l1-2M15 9l1-2"/><path d="M8 18l-3 3"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V11M11 10V4.5a1.5 1.5 0 0 1 3 0V11M14 10.5V6a1.5 1.5 0 0 1 3 0v8a7 7 0 0 1-7 7c-2.5 0-4-1-5.5-3L3 15a1.5 1.5 0 0 1 2.4-1.8L8 15"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/><path d="M8 14h3v3H8z"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4"/><path d="M12 14v4M8 21h8M9 18h6"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5"/><path d="M4 19h16"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></symbol>
+  <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9.5C7.5 20 4 17 4 12V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 6v12M15 6v12"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v15H6a2 2 0 0 0-2 2z"/><path d="M4 20a2 2 0 0 0 2 2h13v-4"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="M12 4v16M6 20h12M5 8h14"/><path d="M5 8l-3 6a3 3 0 0 0 6 0zM19 8l-3 6a3 3 0 0 0 6 0z"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.5v5l4.5-2.5z"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H4z"/><path d="M10 20v-5h4v5"/></symbol>
+  <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol>
+  <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></symbol>
+</svg>
+
+<a class="skip" href="#main">Przejdź do treści</a>
+
+<div class="salebar" id="salebar" role="status">
+  <span data-sale="before">IV edycja kursu rusza <b>14 listopada</b>. Do tego czasu obejrzysz za darmo 2 lekcje. <a href="#probka">Odbierz lekcje</a></span>
+  <span data-sale="open" hidden>Sprzedaż otwarta. Do zamknięcia zostało <b data-countdown-text>...</b> <a href="#cena">Zobacz cenę</a></span>
+  <span data-sale="after" hidden>Sprzedaż zamknięta. Zapisz się, a damy znać przed kolejnym otwarciem. <a href="#probka">Zapisz się</a></span>
+</div>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="nav__logo" href="#top" aria-label="Akademia Stolarstwa, początek strony"><img src="img/logo-akademia-drewna-1.webp" alt="Akademia Stolarstwa" width="300" height="94"></a>
+    <ul class="nav__links">
+      <li><a href="#droga">Program</a></li>
+      <li><a href="#mistrzowie">Mistrzowie</a></li>
+      <li><a href="#opinie">Opinie</a></li>
+      <li><a href="#cena">Cena</a></li>
+      <li><a href="#faq">Pytania</a></li>
+    </ul>
+    <a class="btn btn--primary" href="#cena" data-cta>Dołącz do kursu</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="mnav"><svg class="ico"><use href="#i-menu"/></svg><span>Menu</span></button>
+  </div>
+  <nav class="mnav" id="mnav" hidden aria-label="Menu">
+    <a href="#droga">Program</a><a href="#mistrzowie">Mistrzowie</a><a href="#opinie">Opinie</a><a href="#cena">Cena</a><a href="#faq">Pytania</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <div class="pill"><img src="img/PRZEMEK-KOWALCZYK.webp" alt="">Kurs online Magia Drewna <b>IV edycja</b></div>
+      <h1>Zrób mebel, który <em>przetrwa</em> dłużej niż Twój pierwszy samochód</h1>
+      <p class="lead"><strong>Pięcioro praktyków i nauczycieli zawodu prowadzi Cię od deski z tartaku do gotowego stołu, szafki i łóżka.</strong> 150 lekcji wideo i ponad 50 godzin materiału, dziesięć połączeń pokazanych ręcznie i maszyną, a z pytaniami nie zostajesz bez odpowiedzi.</p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#cena" data-cta>Dołącz do kursu</a>
+        <a class="btn btn--ghost-dark" href="#probka" data-hide-before><svg class="ico"><use href="#i-play"/></svg>Obejrzyj 2 lekcje za darmo</a>
+      </div>
+      <div class="proof">
+        <div class="faces"><img src="img/KAROL-KOPEC.webp" alt=""><img src="img/MARCIN-TOMASZEWSKI.webp" alt=""><img src="img/ANETA-BUKOWSKA.webp" alt=""><img src="img/LUKASZ-GIERGASZ.webp" alt=""><img src="img/PRZEMEK-KOWALCZYK.webp" alt=""></div>
+        <div>Pięcioro instruktorów i <b data-count="328">328</b> <b>kursantów</b> online<br>O warsztacie Kępa Marzeń pisał <b>Forbes</b></div>
+      </div>
+    </div>
+    <div class="hero__media" aria-hidden="true">
+      <div class="hero__photo hero__photo--a"><img src="img/prace-kursantow-magii-drewna-5.webp" alt=""></div>
+      <div class="hero__photo hero__photo--b"><img src="img/prace-kursantow-magii-drewna-4.webp" alt="" style="object-position:30% 50%"></div>
+      <div class="tag tag--1"><span class="badge"><svg class="ico"><use href="#i-sparkle"/></svg></span><div><strong>Szuflada gięta</strong><span>elementy gięto-klejone</span></div></div>
+      <div class="tag tag--2"><span class="badge"><svg class="ico"><use href="#i-dovetail"/></svg></span><div><strong>Jaskółczy ogon</strong><span>ręcznie i maszyną</span></div></div>
+      <div class="tag tag--3"><span class="badge"><svg class="ico"><use href="#i-clock"/></svg></span><div><strong>Dostęp od razu</strong><span>po zakupie</span></div></div>
+    </div>
+  </div>
+  <div class="ruler" aria-hidden="true">
+    <div class="ruler__track">
+      <span><span>Drewno</span><span>Narzędzia</span><span>Połączenia</span><span>Ryczka</span><span>Szafka</span><span>Stół</span><span>Łóżko</span><span>Komoda</span><span>Wykończenie</span><span>Renowacja</span><span>Wycena</span></span>
+      <span><span>Drewno</span><span>Narzędzia</span><span>Połączenia</span><span>Ryczka</span><span>Szafka</span><span>Stół</span><span>Łóżko</span><span>Komoda</span><span>Wykończenie</span><span>Renowacja</span><span>Wycena</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEMY: 2 kolumny bez kart -->
+<section class="section" id="problemy">
+  <div class="wrap split">
+    <div class="split__head" data-reveal>
+      <div class="section-head">
+        <div class="kicker">Czy to brzmi znajomo?</div>
+        <h2>Chęci są. Gorzej z tym, od czego zacząć</h2>
+        <p>Jeśli rozpoznajesz się choć w dwóch z tych zdań, ten kurs powstał dla Ciebie.</p>
+      </div>
+      <div class="answer">
+        <svg class="ico"><use href="#i-compass"/></svg>
+        <div><p><b>Magia Drewna to jedna, uporządkowana ścieżka.</b> Wiesz, co oglądasz dziś, co robisz jutro w warsztacie i kogo zapytać, gdy coś nie wyjdzie.</p>
+        <a class="btn btn--primary" href="#droga">Zobacz ścieżkę kursu</a></div>
+      </div>
+    </div>
+    <ul class="rows">
+      <li data-reveal><span class="badge"><svg class="ico"><use href="#i-play"/></svg></span><div><q>Obejrzałem kilka filmików, poczytałem w sieci i nadal nie wiem.</q><p>Każdy tutorial pokazuje coś innego. Brakuje kolejności, więc trudno ruszyć z pierwszym projektem.</p></div></li>
+      <li data-reveal><span class="badge"><svg class="ico"><use href="#i-wallet"/></svg></span><div><q>Boję się, że ktoś wciśnie mi tysiąc narzędzi, których użyję raz.</q><p>Pilarka, strug, frezarka, dłuta. Bez wiedzy łatwo kupić za dużo, za drogo albo nie to.</p></div></li>
+      <li data-reveal><span class="badge"><svg class="ico"><use href="#i-crack"/></svg></span><div><q>Kilka godzin pracy rozpadło mi się w dłoniach. Drewno było za mokre.</q><p>Pęknięcia, wypaczone blaty i szpary w klejonkach to zwykle źle dobrane drewno, wilgotność albo połączenie.</p></div></li>
+      <li data-reveal><span class="badge"><svg class="ico"><use href="#i-heart"/></svg></span><div><q>Mam narzędzia po dziadku stolarzu i nie umiem z nich korzystać.</q><p>Chcesz zrobić coś dla rodziny i poczuć, że ta tradycja nie skończyła się na Tobie.</p></div></li>
+      <li data-reveal><span class="badge"><svg class="ico"><use href="#i-pin"/></svg></span><div><q>Na kurs stacjonarny nie mam czasu, a najbliższy jest kilkaset kilometrów stąd.</q><p>Dojazd, nocleg, wolny weekend. A po dwóch dniach i tak nie da się wrócić do tego, co pokazał instruktor.</p></div></li>
+      <li data-reveal><span class="badge"><svg class="ico"><use href="#i-chat"/></svg></span><div><q>Utknąłem przy jednym kroku i nie mam kogo zapytać.</q><p>Drobna wskazówka od kogoś, kto robi to od lat, oszczędza tygodnie prób i zepsutego materiału.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- PRZED I PO -->
+<section class="section section--board" id="zmiana">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="kicker">Co się zmienia</div>
+      <h2>Ta sama osoba, ten sam warsztat. Inne efekty</h2>
+      <p>Przełącz i zobacz, jak zmienia się praca z drewnem po przejściu kursu.</p>
+    </div>
+    <div class="ba" id="ba" data-state="przed" data-reveal>
+      <div class="ba__switch" role="group" aria-label="Pokaż stan">
+        <button type="button" aria-pressed="true" data-ba="przed">Przed kursem</button>
+        <button type="button" aria-pressed="false" data-ba="po">Po kursie</button>
+      </div>
+      <ul class="ba__list" aria-live="polite"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- DLA KOGO -->
+<section class="section" id="dla-kogo">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="kicker">Dla kogo</div>
+      <h2>Wybierz, gdzie dziś jesteś</h2>
+      <p>Kurs przechodzi każdy inaczej. Zobacz, co da właśnie Tobie i od których modułów zacząć.</p>
+    </div>
+    <div class="tabs" data-reveal>
+      <div class="tabs__list" role="tablist" aria-label="Kim jesteś"></div>
+      <div role="tabpanel" id="persona-panel" tabindex="0"></div>
+    </div>
+  </div>
+</section>
+
+<!-- DROGA: TASMA -->
+<section class="section section--board" id="droga">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="kicker">Jak przechodzisz kurs</div>
+      <h2>Sześć odcinków od deski do gotowego mebla</h2>
+      <p>Każdy etap kończy się czymś, co umiesz zrobić sam. Moduły ułożyliśmy tak, jak pracuje się w prawdziwym warsztacie.</p>
+    </div>
+    <div class="path">
+      <div class="tape" aria-hidden="true"><div class="tape__body"><div class="tape__hook"></div><div class="tape__fill" id="tapeFill"></div><div class="tape__count" id="tapeCount"></div></div></div>
+      <ol class="stages" id="stages"></ol>
+    </div>
+  </div>
+</section>
+
+<!-- POLACZENIA -->
+<section class="section section--dark" id="polaczenia">
+  <div class="wrap joints">
+    <figure class="joints__photo" data-reveal><img src="img/prace-kursantow-magii-drewna-2.webp" alt="Szkatułka z połączeniem na jaskółczy ogon" loading="lazy" width="2048" height="1463"><figcaption>Jaskółczy ogon, moduł IX</figcaption></figure>
+    <div data-reveal>
+      <div class="kicker">Połączenia stolarskie</div>
+      <h2>Nie masz maszyn? Zaczniesz dłutem i piłą</h2>
+      <p class="lead" style="margin-top:16px">Dziesięć połączeń pokazujemy dwa razy. Raz narzędziami ręcznymi, raz maszyną i elektronarzędziami. Ty wybierasz, jak pracujesz dziś, a maszyny dokupujesz, gdy będą naprawdę potrzebne.</p>
+      <div class="seg" role="group" aria-label="Sposób pracy">
+        <button type="button" aria-pressed="true" data-way="A"><svg class="ico"><use href="#i-hand"/></svg>Narzędzia ręczne</button>
+        <button type="button" aria-pressed="false" data-way="B"><svg class="ico"><use href="#i-gear"/></svg>Maszyny</button>
+      </div>
+      <ul class="joints__list" id="joints" aria-live="polite"></ul>
+      <p class="joints__note">Do tego połączenia na gwoździe, wkręty, kołki i połączenie płetwowe w blatach.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALERIA -->
+<section class="section" id="prace">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="kicker">Prace instruktorów i kursantów</div>
+      <h2>Tak wygląda drewno, kiedy wiesz, co robisz</h2>
+      <p>Kliknij zdjęcie, żeby zobaczyć je w całości.</p>
+    </div>
+    <div class="gallery" id="gallery" data-reveal>
+      <button class="g1" type="button" data-full="img/prace-kursantow-magii-drewna.webp" data-cap="Łóżko z wezgłowiem i szafka nocna"><img src="img/prace-kursantow-magii-drewna.webp" alt="Łóżko z wezgłowiem i szafka nocna" loading="lazy" width="1600" height="1200"><figcaption>Łóżko i szafka nocna</figcaption></button>
+      <button class="g2" type="button" data-full="img/prace-kursantow-magii-drewna-4.webp" data-cap="Konsola z toczonymi nogami i rzeźbionym blatem"><img src="img/prace-kursantow-magii-drewna-4.webp" alt="Konsola z toczonymi nogami" loading="lazy" width="1600" height="1200"><figcaption>Konsola z toczonymi nogami</figcaption></button>
+      <button class="g3" type="button" data-full="img/prace-kursantow-magii-drewna-3.webp" data-cap="Biurko z jesionu z dwiema szufladami"><img src="img/prace-kursantow-magii-drewna-3.webp" alt="Biurko z dwiema szufladami" loading="lazy" width="1512" height="1080"><figcaption>Biurko</figcaption></button>
+      <button class="g4" type="button" data-full="img/prace-kursantow-magii-drewna-5.webp" data-cap="Okrągła szafka z wygiętą szufladą"><img src="img/prace-kursantow-magii-drewna-5.webp" alt="Okrągła szafka z wygiętą szufladą" loading="lazy" width="1848" height="1320"><figcaption>Szuflada gięta</figcaption></button>
+      <button class="g5" type="button" data-full="img/prace-kursantow-magii-drewna-2.webp" data-cap="Szkatułka łączona na jaskółczy ogon"><img src="img/prace-kursantow-magii-drewna-2.webp" alt="Szkatułka łączona na jaskółczy ogon" loading="lazy" width="2048" height="1463"><figcaption>Jaskółczy ogon</figcaption></button>
+    </div>
+  </div>
+</section>
+
+<!-- CO DOSTAJESZ: bento 2 kolumny bez kart -->
+<section class="section section--board" id="w-kursie">
+  <div class="wrap bento">
+    <figure class="bento__photo" data-reveal>
+      <img src="img/stacjonarny-kurs-stolarstwa.webp" alt="Kursanci i instruktorzy na spotkaniu na żywo" loading="lazy" width="1024" height="576" style="object-position:55% 50%">
+      <figcaption><b>Spotkanie kursantów na żywo</b>Dwa razy w roku pracujemy razem przy stołach warsztatowych.</figcaption>
+    </figure>
+    <div>
+      <div class="section-head" data-reveal style="margin-bottom:24px">
+        <div class="kicker">Co dostajesz</div>
+        <h2>Kurs to coś więcej niż lekcje wideo</h2>
+      </div>
+      <div class="perks">
+        <div class="perk" data-reveal><span class="badge"><svg class="ico"><use href="#i-play"/></svg></span><h3>Uczysz się, kiedy masz czas</h3><p>150 lekcji wideo, ponad 50 godzin materiału. Dostęp dostajesz od razu po zakupie i możesz wracać do lekcji przy każdym projekcie.</p></div>
+        <div class="perk" data-reveal><span class="badge"><svg class="ico"><use href="#i-users"/></svg></span><h3>Masz kogo zapytać</h3><p>Zamknięta grupa kursantów. Wrzucasz zdjęcie problemu, instruktorzy podpowiadają, co poprawić.</p></div>
+        <div class="perk" data-reveal><span class="badge"><svg class="ico"><use href="#i-calendar"/></svg></span><h3>Pracujesz z mistrzami na żywo</h3><p>Dwa spotkania w roku, przy prawdziwych stołach i maszynach.</p></div>
+        <div class="perk" data-reveal><span class="badge"><svg class="ico"><use href="#i-trophy"/></svg></span><h3>Sprawdzasz się w konkursach</h3><p>Szafki nocne, stoliki kawowe. Konkursy z nagrodami tylko dla kursantów.</p></div>
+        <div class="perk" data-reveal><span class="badge"><svg class="ico"><use href="#i-tag"/></svg></span><h3>Kupujesz sprzęt taniej</h3><p>Zniżki u partnerów kursu na maszyny, elektronarzędzia, dłuta, ściski i piły.</p></div>
+        <div class="perk" data-reveal><span class="badge"><svg class="ico"><use href="#i-download"/></svg></span><h3>Masz ściągi pod ręką</h3><p>Materiały do pobrania przy lekcjach, np. tabela wilgotności powietrza i drewna.</p></div>
+        <div class="perk" data-reveal><span class="badge"><svg class="ico"><use href="#i-award"/></svg></span><h3>Potwierdzasz umiejętności</h3><p>Certyfikat ukończenia kursu wystawimy na Twoją prośbę.</p></div>
+        <div class="perk" data-reveal><span class="badge"><svg class="ico"><use href="#i-receipt"/></svg></span><h3>Płacisz tak, jak Ci wygodnie</h3><p>Raty przez TPay i faktura VAT, także na firmę.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISTRZOWIE -->
+<section class="section section--dark masters-wall" id="mistrzowie">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="kicker">Mistrzowie</div>
+      <h2>Uczysz się od ludzi, którzy egzaminują stolarzy</h2>
+      <p>Mistrzowie stolarscy, nauczyciele zawodu i eksperci WorldSkills. Trzech z nich to egzaminatorzy Izby Rzemiosła. Wybierz osobę, żeby ją poznać.</p>
+    </div>
+    <div class="masters" id="masters" data-reveal></div>
+    <div class="team-sum" data-reveal>
+      <div><b><span data-count="100">100</span>+ lat</b>łącznego doświadczenia</div>
+      <div><b><span data-count="1000">1000</span>+</b>osób na kursach stacjonarnych</div>
+      <div><b data-count="328">328</b>kursantów online</div>
+      <div><b data-count="16">16</b>modułów od drewna po renowację</div>
+    </div>
+  </div>
+</section>
+
+<!-- OPINIE: MULTISLIDER -->
+<section class="section" id="opinie">
+  <div class="wrap">
+    <div class="reviews-head" data-reveal>
+      <div class="section-head" style="margin-bottom:36px">
+        <div class="kicker">Opinie i prace kursantów</div>
+        <h2>Posłuchaj kursantów, zanim zdecydujesz</h2>
+        <p>Opinie wideo, finały konkursów i rozmowy o meblach, które kursanci zrobili po kursie.</p>
+      </div>
+      <div class="slider-ctrl" style="margin-bottom:40px"><button type="button" id="pauseAll" aria-pressed="false"><svg class="ico"><use href="#i-pause"/></svg><span>Zatrzymaj przewijanie</span></button></div>
+    </div>
+  </div>
+  <div class="marquee" data-reveal><div class="marquee__track" id="videoTrack"></div></div>
+  <div class="marquee marquee--rev" data-reveal><div class="marquee__track" id="textTrack"></div></div>
+</section>
+
+<!-- POROWNANIE -->
+<section class="section section--board" id="porownanie">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="kicker">Porównanie</div>
+      <h2>Kurs, YouTube czy zajęcia w warsztacie?</h2>
+      <p>Każda droga ma sens. Zobacz uczciwie, co dostajesz w każdej z nich.</p>
+    </div>
+    <div class="compare-wrap" data-reveal>
+      <table class="compare" role="table">
+        <caption class="sr-only">Porównanie sposobów nauki stolarstwa</caption>
+        <colgroup><col class="c-q"><col><col><col><col></colgroup>
+        <thead role="rowgroup"><tr role="row"><th role="columnheader" scope="col">Co jest dla Ciebie ważne</th><th role="columnheader" scope="col" class="us">Magia Drewna</th><th role="columnheader" scope="col">Darmowe filmy</th><th role="columnheader" scope="col">Kurs stacjonarny</th><th role="columnheader" scope="col">Książki</th></tr></thead>
+        <tbody role="rowgroup">
+          <tr role="row"><th scope="row" role="rowheader">Ścieżka od zera do gotowego mebla</th><td role="cell" class="us" data-label="Magia Drewna"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span><span class="note">16 modułów w kolejności pracy w warsztacie</span></td><td role="cell" data-label="Darmowe filmy"><span class="st n"><svg class="ico"><use href="#i-x"/></svg>Nie</span><span class="note">Sam układasz kolejność</span></td><td role="cell" data-label="Kurs stacjonarny"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">W zakresie jednego tematu</span></td><td role="cell" data-label="Książki"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">Bez obrazu ruchu</span></td></tr>
+          <tr role="row"><th scope="row" role="rowheader">Pytania do praktyków</th><td role="cell" class="us" data-label="Magia Drewna"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span><span class="note">Zamknięta grupa z instruktorami</span></td><td role="cell" data-label="Darmowe filmy"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">Komentarze, bez gwarancji odpowiedzi</span></td><td role="cell" data-label="Kurs stacjonarny"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span><span class="note">Na miejscu</span></td><td role="cell" data-label="Książki"><span class="st n"><svg class="ico"><use href="#i-x"/></svg>Nie</span></td></tr>
+          <tr role="row"><th scope="row" role="rowheader">Powrót do lekcji, gdy zapomnisz</th><td role="cell" class="us" data-label="Magia Drewna"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span><span class="note">Przez 5 lat</span></td><td role="cell" data-label="Darmowe filmy"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span></td><td role="cell" data-label="Kurs stacjonarny"><span class="st n"><svg class="ico"><use href="#i-x"/></svg>Nie</span><span class="note">Zostają notatki</span></td><td role="cell" data-label="Książki"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span></td></tr>
+          <tr role="row"><th scope="row" role="rowheader">Instruktor patrzy Ci na ręce</th><td role="cell" class="us" data-label="Magia Drewna"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">Na 2 spotkaniach w roku</span></td><td role="cell" data-label="Darmowe filmy"><span class="st n"><svg class="ico"><use href="#i-x"/></svg>Nie</span></td><td role="cell" data-label="Kurs stacjonarny"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span><span class="note">To największy plus</span></td><td role="cell" data-label="Książki"><span class="st n"><svg class="ico"><use href="#i-x"/></svg>Nie</span></td></tr>
+          <tr role="row"><th scope="row" role="rowheader">Drewno, renowacja i wycena w jednym miejscu</th><td role="cell" class="us" data-label="Magia Drewna"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span><span class="note">W jednym kursie</span></td><td role="cell" data-label="Darmowe filmy"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">Rozproszone po kanałach</span></td><td role="cell" data-label="Kurs stacjonarny"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">Osobne kursy</span></td><td role="cell" data-label="Książki"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">Osobne tytuły</span></td></tr>
+          <tr role="row"><th scope="row" role="rowheader">Koszt</th><td role="cell" class="us" data-label="Magia Drewna"><span class="st price">2990 zł</span><span class="note">Za całość, także na raty</span></td><td role="cell" data-label="Darmowe filmy"><span class="st price">0 zł</span><span class="note">Ale dużo czasu na szukanie</span></td><td role="cell" data-label="Kurs stacjonarny"><span class="st price">990 do 1790 zł</span><span class="note">Za jeden temat, plus dojazd</span></td><td role="cell" data-label="Książki"><span class="st price">Różnie</span><span class="note">Zależnie od liczby tytułów</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="compare-note" data-reveal><svg class="ico"><use href="#i-home"/></svg><span>Lubisz uczyć się przy stole warsztatowym? Akademia prowadzi też kursy stacjonarne w warsztacie Kępa Marzeń. Oba sposoby dobrze się uzupełniają: teoria i powtórki online, praktyka pod okiem instruktora na miejscu.</span></p>
+  </div>
+</section>
+
+<!-- PROGRAM -->
+<section class="section" id="program">
+  <div class="wrap">
+    <div class="section-head" data-reveal>
+      <div class="kicker">Pełny program</div>
+      <h2>Wszystkie moduły i lekcje</h2>
+      <p>Szukasz konkretnego tematu? Wpisz go, a pokażemy, w której lekcji jest.</p>
+    </div>
+    <div class="prog__tools" data-reveal>
+      <label class="prog__search" for="progSearch"><span class="sr-only">Szukaj w programie</span><svg class="ico"><use href="#i-search"/></svg><input type="search" id="progSearch" aria-label="Szukaj w programie" placeholder="Np. czop, lakier, wilgotność, renowacja"></label>
+      <div class="prog__stats" id="progStats" aria-live="polite"></div>
+    </div>
+    <div class="modules" id="modules"></div>
+  </div>
+</section>
+
+<!-- PROBKA -->
+<section class="section section--board" id="probka">
+  <div class="wrap sample">
+    <div class="browser" data-reveal>
+      <div class="browser__bar"><i></i><i></i><i></i><span>akademiastolarstwa.pl/kurs</span></div>
+      <img src="img/kurs-stolarstwa-uporzadkwoane-lekcje.webp" alt="Panel kursu: lista modułów po lewej, lekcja wideo z Przemkiem po prawej" loading="lazy" width="1024" height="576">
+    </div>
+    <div data-reveal>
+      <div class="kicker">Sprawdź, zanim kupisz</div>
+      <h2>Obejrzyj 2 lekcje za darmo</h2>
+      <p class="lead" style="margin-top:16px">Ponad 40 minut materiału prosto z kursu. Zobaczysz, jak tłumaczymy i czy ten sposób nauki Ci pasuje. W dniu startu sprzedaży wyślemy Ci przypomnienie.</p>
+      <ul class="lessons-free">
+        <li><svg class="ico"><use href="#i-play"/></svg>Jakie gatunki drewna wybrać do projektu</li>
+        <li><svg class="ico"><use href="#i-play"/></svg>Rozpoznawanie gatunków rozpierzchłonaczyniowych</li>
+      </ul>
+      <form class="form" id="leadForm" novalidate>
+        <label for="fImie">Imię<input type="text" id="fImie" name="imie" autocomplete="given-name" required></label>
+        <label for="fEmail">E-mail<input type="email" id="fEmail" name="email" autocomplete="email" required></label>
+        <label class="consent" for="fZgoda"><input type="checkbox" id="fZgoda" name="zgoda" required> <span>Chcę dostać lekcje i wiadomości o kursie. Mogę wypisać się w każdej chwili. Administratorem danych jest Akademia Stolarstwa, szczegóły w <a href="https://akademiastolarstwa.pl/polityka-prywatnosci/">polityce prywatności</a>.</span></label>
+        <button class="btn btn--primary" type="submit">Wyślij mi lekcje</button>
+        <div class="form__msg" id="formMsg" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- CENA -->
+<section class="section section--dark" id="cena">
+  <div class="wrap price">
+    <div data-reveal>
+      <div class="kicker">Inwestycja</div>
+      <h2>Tematy pięciu kursów stacjonarnych w jednym kursie online</h2>
+      <p class="lead" style="margin-top:16px">Tyle kosztują osobno kursy stacjonarne z tych tematów:</p>
+      <ul class="stack">
+        <li><span><svg class="ico"><use href="#i-saw"/></svg>Kurs stolarski podstawowy</span><span>1790 zł</span></li>
+        <li><span><svg class="ico"><use href="#i-dovetail"/></svg>Kurs połączeń</span><span>1690 zł</span></li>
+        <li><span><svg class="ico"><use href="#i-chisel"/></svg>Praca narzędziami ręcznymi</span><span>1200 zł</span></li>
+        <li><span><svg class="ico"><use href="#i-chair"/></svg>Renowacja mebli</span><span>990 zł</span></li>
+        <li><span><svg class="ico"><use href="#i-tree"/></svg>Suszarnictwo</span><span>1600 zł</span></li>
+        <li class="sum"><span>Razem, osobno</span><span>7270 zł</span></li>
+      </ul>
+      <div class="guarantee">
+        <span class="badge"><svg class="ico"><use href="#i-shield"/></svg></span>
+        <p><b>Gwarancja zwrotu pieniędzy.</b> Jeśli uznasz, że kurs nie spełnia Twoich oczekiwań, napisz do nas w ciągu 14 dni od zakupu, a zwrócimy pełną kwotę.</p>
+      </div>
+    </div>
+    <div class="price-card" data-reveal>
+      <div class="price-card__status" id="priceStatus">Sprzedaż od 14 listopada</div>
+      <div class="price-card__amount">2990 zł<small>z VAT</small></div>
+      <p class="price-card__alt">Mniej niż 20 zł za lekcję. Możesz rozłożyć płatność na raty.</p>
+      <div class="countdown" id="countdown">
+        <div><b data-cd="d">00</b><span>dni</span></div><div><b data-cd="h">00</b><span>godzin</span></div><div><b data-cd="m">00</b><span>minut</span></div><div><b data-cd="s">00</b><span>sekund</span></div>
+      </div>
+      <a class="btn btn--primary" href="#" id="buyBtn">Dołącz do kursu</a>
+      <ul class="incl">
+        <li><svg class="ico"><use href="#i-check"/></svg>150 lekcji wideo w 16 modułach, ponad 50 godzin</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Dostęp od razu po płatności, na 5 lat</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Zamknięta grupa z instruktorami</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Dwa spotkania na żywo w roku</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Konkursy z nagrodami i zniżki u partnerów</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Certyfikat ukończenia na życzenie</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Faktura VAT, także na firmę</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ: 2 kolumny -->
+<section class="section" id="faq">
+  <div class="wrap split">
+    <div class="split__head" data-reveal>
+      <div class="section-head">
+        <div class="kicker">Pytania</div>
+        <h2>Zanim zdecydujesz</h2>
+        <p>Nie ma tu Twojego pytania? Napisz, odpowiemy.</p>
+      </div>
+      <div class="faq-contact"><span class="badge"><svg class="ico"><use href="#i-chat"/></svg></span><span>Formularz kontaktowy: <a href="https://akademiastolarstwa.pl/kontakt/">akademiastolarstwa.pl/kontakt</a></span></div>
+    </div>
+    <div class="faq" data-reveal>
+      <details><summary>Nie mam żadnego doświadczenia z drewnem. Dam radę?</summary><p>Tak. Kurs zaczyna się od tego, czym jest drewno i jak się zachowuje, a dopiero potem przechodzi do narzędzi i połączeń. Lekcje idą krok po kroku, a w grupie możesz zapytać o wszystko.</p></details>
+      <details><summary>Jakie narzędzia muszę mieć na start?</summary><p>Nie potrzebujesz parku maszynowego. Dziesięć głównych połączeń pokazujemy też narzędziami ręcznymi, a w module o narzędziach mówimy, od czego zacząć i na co zwrócić uwagę przy zakupie. Zniżki u partnerów pomogą kupić taniej.</p></details>
+      <details><summary>Kiedy dostanę dostęp i na jak długo?</summary><p>Od razu po zaksięgowaniu płatności. Dostęp masz na 5 lat, więc możesz wracać do lekcji przy każdym nowym projekcie.</p></details>
+      <details><summary>Mieszkam w bloku i nie mam warsztatu. Czy to ma sens?</summary><p>Tak. Na start wystarczy kąt w piwnicy albo garażu. Kurs pokazuje pracę narzędziami ręcznymi, które nie potrzebują dużej przestrzeni ani hałaśliwych maszyn, a w osobnych lekcjach omawiamy stanowisko robocze i budowę stołu warsztatowego.</p></details>
+      <details><summary>Ile kosztuje kurs?</summary><p>2990 zł z VAT. Możesz zapłacić jednorazowo albo w ratach. Cenę widzisz na tej stronie, bez zapisywania się i bez rozmowy z handlowcem.</p></details>
+      <details><summary>Czy da się nauczyć stolarstwa online?</summary><p>Teorii, kolejności pracy i techniki tak, i to szybciej niż z przypadkowych filmów, bo każdą lekcję możesz zatrzymać i obejrzeć jeszcze raz. Rękę wyrabiasz w swoim warsztacie. Gdy coś nie wychodzi, wrzucasz zdjęcie do grupy, a dwa razy w roku możesz pracować pod okiem instruktorów na spotkaniu na żywo.</p></details>
+      <details><summary>Czy kurs pomoże mi zarabiać na stolarstwie?</summary><p>Daje podstawy, których potrzebuje stolarz: technologię, połączenia, wykończenie i renowację. Do tego lekcja o wycenie projektu i moduł o tym, jaką działalność założyć i jak współpracować z klientami. Samo zarabianie zależy od Twojej praktyki i decyzji.</p></details>
+      <details><summary>Czy mogę zapłacić w ratach?</summary><p>Tak. Płatność ratalną wybierasz przy zamówieniu, obsługuje ją system TPay. Dostęp do kursu otwiera się po zaksięgowaniu płatności.</p></details>
+      <details><summary>Czy dostanę fakturę i certyfikat?</summary><p>Tak. Wystawiamy fakturę VAT (23%), także na firmę. Certyfikat ukończenia kursu wystawimy na Twoją prośbę.</p></details>
+      <details><summary>Co, jeśli kurs mi nie podpasuje?</summary><p>Masz 14 dni od zakupu na decyzję. Jeśli kurs nie spełni Twoich oczekiwań, napisz do nas w tym czasie, a zwrócimy pełną kwotę.</p></details>
+      <details><summary>Dlaczego sprzedaż trwa tylko kilkanaście dni?</summary><p>Sprzedaż to dla nas dużo pracy. Po jej zamknięciu skupiamy się na kursantach: odpowiadamy w grupie, prowadzimy kursy stacjonarne i spotkania. Dlatego zapisy otwieramy tylko na 14 dni. Jeśli nie zdążysz, zapisz się na listę, a damy znać przed kolejnym otwarciem.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+  <div class="final__grid">
+    <div class="final__photo"><img src="img/przemek-prowadzacy-Akademia-stolarstwa.webp" alt="Przemek w warsztacie, w tle deski z tartaku" loading="lazy" width="1920" height="1080"></div>
+    <div class="final__text" data-reveal>
+      <div class="kicker" style="color:var(--gold)">Twój ruch</div>
+      <h2>Pierwszy mebel zrobiony własnymi rękami zostaje w domu na lata</h2>
+      <p class="lead">Zacznij od deski, a my pokażemy Ci każdy kolejny krok. Dostęp dostajesz od razu po zakupie.</p>
+      <a class="btn btn--primary" href="#cena" data-cta>Dołącz do kursu</a>
+      <div class="final__who">Przemek, Asia i zespół instruktorów Akademii Stolarstwa</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div>Akademia Stolarstwa · warsztat Kępa Marzeń</div>
+    <div><a href="https://akademiastolarstwa.pl/regulamin/">Regulamin</a> &nbsp; <a href="https://akademiastolarstwa.pl/polityka-prywatnosci/">Polityka prywatności</a> &nbsp; <a href="https://akademiastolarstwa.pl/kontakt/">Kontakt</a></div>
+  </div>
+</footer>
+
+<div class="sticky-cta" id="stickyCta"><a class="btn btn--primary" href="#cena" data-cta>Dołącz do kursu</a></div>
+
+<script>
+/* ===== OKNO SPRZEDAZY: 14 dni od 14.11 (decyzja 15.10.2026) ===== */
+const SALE_START = new Date('2026-11-14T00:00:00+01:00');
+const SALE_DAYS = 14;
+const SALE_END = new Date(SALE_START.getTime() + SALE_DAYS*864e5 - 1000);
+const BUY_URL = 'https://akademiastolarstwa.pl/sklep/'; // DO PODMIANY: link do produktu Magia Drewna w sklepie Akademii
+
+const ico = id => `<svg class="ico"><use href="#i-${id}"/></svg>`;
+const esc = s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ===== DANE ===== */
+const BA = [
+  ['compass','Pierwszy krok','Oglądasz kolejny film, a w garażu nadal nic nie powstaje.','Wiesz, którą lekcję oglądasz dziś i co z niej zrobisz w warsztacie.'],
+  ['cart','Zakup sprzętu','Kupujesz narzędzia na wyczucie i boisz się, że przepłacasz.','Kupujesz to, czego potrzebujesz teraz, i wiesz, na co patrzeć w sklepie.'],
+  ['crack','Trwałość','Blat pęka, szuflada się klinuje, a Ty nie wiesz dlaczego.','Dobierasz wilgotność drewna i połączenie, zanim cokolwiek pęknie.'],
+  ['tree','Tartak','Kiwasz głową przy ladzie, bo nie znasz nazw i wymiarów.','Wiesz, jaki gatunek wybrać i ile materiału kupić na projekt.'],
+  ['chair','Stare meble','Komoda po babci stoi w piwnicy, bo boisz się ją zepsuć.','Oceniasz stan mebla, zdejmujesz stare powłoki i odnawiasz go z szacunkiem.'],
+  ['calc','Wycena','Nie wiesz, ile wziąć za stół dla znajomych.','Liczysz materiał i czas pracy, a potem podajesz cenę bez zgadywania.'],
+];
+
+const PERSONAS = [
+  {id:'zero',icon:'sparkle',tab:'Zaczynam od zera',title:'Chcesz zrobić pierwszy mebel, ale nie wiesz, od czego zacząć',
+   text:'Masz kawałek garażu albo piwnicy i ochotę na pracę rękami po dniu przed ekranem. Kurs prowadzi Cię od wiedzy o drewnie do pierwszej ryczki i szafki, bez kupowania połowy marketu budowlanego.',
+   goal:'Pierwszy mebel powstaje w Twoim tempie, z lekcją pod ręką, a każdy kolejny idzie pewniej.',
+   wins:['Rozumiesz, jak pracuje drewno, więc nie walczysz z materiałem','Wiesz, które narzędzia kupić na start','Robisz pierwsze połączenia dłutem i piłą','Budujesz ryczkę, szafkę i stół według projektu'],
+   mods:['I. Wiedza o drewnie','VI. Obróbka ręczna','IX. Połączenia stolarskie','XII. Projekty krok po kroku']},
+  {id:'zawod',icon:'wallet',tab:'Chcę z tego zarabiać',title:'Myślisz o stolarstwie jako zawodzie albo drugim źródle dochodu',
+   text:'Robisz już coś po godzinach albo planujesz zmianę. Potrzebujesz wiedzy, która pozwoli robić rzeczy trwałe, za które klient zapłaci, i odwagi, żeby wystawić pierwszą fakturę.',
+   goal:'Wiesz, jak wycenić projekt, jaką działalność założyć i jak rozmawiać z klientem.',
+   wins:['Technologia i suszenie drewna od strony praktyka','Pełna kolejność technologiczna na maszynach','Wycena projektu krok po kroku','Wybór formy działalności i praca z klientami'],
+   mods:['IV. Wilgotność i suszenie','VII. Obróbka mechaniczna','XII. Projekty krok po kroku (z wyceną)','XVI. Marketing w stolarstwie']},
+  {id:'renowacja',icon:'chair',tab:'Kocham stare meble',title:'Chcesz ratować meble z duszą, a nie wyrzucać je na śmietnik',
+   text:'Masz komodę po dziadkach albo wypatrujesz perełek na targach staroci. Boisz się jednak, że zniszczysz coś, czego nie da się odkupić. Renowację prowadzi Aneta, która robi to od ponad 26 lat.',
+   goal:'Odnawiasz mebel tak, że widać jego historię, a nie Twoje pierwsze próby.',
+   wins:['Rozpoznajesz drewno i oceniasz stan mebla','Usuwasz stare powłoki bez niszczenia drewna','Naprawiasz okleinę, uzupełniasz ubytki, odtwarzasz detale','Woskujesz i politurujesz meble dawne'],
+   mods:['II. Wady drewna i jego ochrona','III. Rozpoznawanie drewna','XIII. Barwienie i malowanie','XV. Restauracja mebli dawnych']},
+  {id:'sredni',icon:'hammer',tab:'Już coś robię',title:'Masz za sobą kilka projektów i chcesz robić to czyściej',
+   text:'Wkręty i konfirmaty już znasz. Teraz chcesz połączeń, które nie potrzebują metalu, mebli, które nie skrzypią po roku, i wykończenia, z którego jesteś dumny.',
+   goal:'Twoje meble wyglądają czyściej, a Ty rozumiesz, z czego wynika każda decyzja.',
+   wins:['Czopy, wczepy i jaskółczy ogon ręcznie i maszyną','Elementy gięto-klejone i krzywoliniowe','Projektowanie w SketchUp','Intarsja, grawerowanie i okucia'],
+   mods:['IX. Połączenia stolarskie','X. Przygotowanie projektów','XII. Projekty krok po kroku','XIV. Techniki zdobienia']},
+];
+
+const MODULES = [
+  ['','Wstęp',['Powitanie i omówienie kursu']],
+  ['I','Wiedza o drzewach, drewnie i tworzywach drewnopochodnych',['Budowa drzewa','Makroskopowa budowa drewna','Mikroskopowa budowa drewna','Właściwości fizyczne drewna','Właściwości mechaniczne drewna','Surowiec drzewny','Sklejka, płyta meblowa i płyta stolarska','Płyty wiórowe, paździerzowe, OSB i MFP','Płyty pilśniowe i MDF']],
+  ['II','Wady drewna i jego ochrona',['Fizyczne wady drewna','Fałszywa twardziel','Owady techniczne, szkodniki drewna','Grzyby domowe','Korozja biologiczna drewna i barwice','Zabezpieczenie chemiczne drewna','Jak sprawdzić, czy wykonano impregnację drewna']],
+  ['III','Rozpoznawanie drewna w praktyce',['Wstęp do rozpoznawania drewna','Gatunki iglaste','Gatunki liściaste pierścieniowonaczyniowe','Gatunki liściaste rozpierzchłonaczyniowe','Gatunki owocowe','Gatunki egzotyczne']],
+  ['IV','Wilgotność i suszenie drewna',['Higroskopijność drewna','Podstawowe parametry wilgotności drewna','Parametry powietrza','Pomiar wilgotności powietrza','Pomiar wilgotności drewna','Podstawy suszenia drewna, kurczenie i pęcznienie','Sezonowanie i naturalne suszenie drewna','Suszarki do drewna (suszenie sztuczne)']],
+  ['V','Skąd pozyskać drewno i jakie gatunki wybrać',['Charakterystyka i nazewnictwo materiałów drzewnych w Polsce','Wyprawa do tartaku czy tartaki internetowe?','Jakie gatunki wybrać ze względu na właściwości fizyczne i mechaniczne','Normy zużycia. Ile kupić materiału?']],
+  ['VI','Obróbka ręczna drewna',['Obróbka ręczna w nowoczesnym świecie','Które gatunki są „lepsze”, a które „gorsze” przy obróbce ręcznej','Narzędzia, wstęp i omówienie','Stanowisko robocze','Trasowanie drewna wstępne i międzywymiarowe','Pojęcie ostrza elementarnego','Piły','Strugi','Ostrzenie noży strugów i konserwacja','Tarniki oraz pilniki','Dłuta','Ostrzenie i konserwacja dłut','Wiercenie świdrami i wiertłami','Ostrzenie i konserwacja świdrów i wierteł','Szlifowanie: papiery ścierne, cykliny i szkło']],
+  ['VII','Mechaniczna obróbka drewna',['BHP podczas pracy przy maszynach','Podstawowe maszyny do obróbki drewna','Elektronarzędzia do obróbki drewna','Pozostałe maszyny i urządzenia','Kolejność technologiczna obróbki drewna','Piłowanie drewna w praktyce','Wyrównywanie drewna w praktyce','Frezowanie drewna w praktyce','Wiercenie w drewnie w praktyce','Szlifowanie maszynami i elektronarzędziami','Kolejność technologiczna w praktyce','Stolarski stół warsztatowo-montażowy']],
+  ['VIII','Rodzaje konstrukcji mebli',['Rys historyczny, budowa mebli i nazewnictwo elementów']],
+  ['IX','Połączenia stolarskie',['Rodzaje połączeń, teoria','Połączenia na gwoździe w praktyce','Połączenia na wkręty i śruby w praktyce','Połączenia kołkowe okrągłe i płaskie','Wczepy proste, ręcznie','Wczepy proste, maszynowo','Jaskółczy ogon przelotowy, ręcznie','Jaskółczy ogon półkryty i przelotowy, maszynowo','Czop pojedynczy kryty, ręcznie','Czop pojedynczy kryty, maszynowo','Czop odsadzony, ręcznie','Czop odsadzony, maszynowo','Połączenie krzyżowe zakładkowe, ręcznie','Połączenie krzyżowe zakładkowe, maszynowo','Połączenie klinowe, ręcznie','Połączenie klinowe, maszynowo','Wpust i wypust prostokątny i trapezowy, ręcznie','Wpust i wypust prostokątny i trapezowy, maszynowo','Połączenie wręgowe, ręcznie','Połączenie wręgowe, maszynowo','Czołowe zakładkowe i widlicowe, ręcznie','Czołowe zakładkowe i widlicowe, maszynowo','Prostopadłe zakładkowe, ręcznie','Prostopadłe zakładkowe, maszynowo','Połączenie płetwowe w blatach']],
+  ['X','Przygotowanie projektów stolarskich',['Ręcznie w zeszycie','Darmowy program SketchUp']],
+  ['XI','Kleje do drewna i klejenie płyty meblowej',['Kleje do drewna: rodzaje i zastosowanie','Przebieg klejenia płyty meblowej']],
+  ['XII','Projekty stolarskie krok po kroku',['Wycena projektu','Ryczka (zydelek)','Szafka','Strugnica','Stół','Łóżko','Fronty meblowe','Biurko i komoda','Projekt z elementami gięto-klejonymi i krzywoliniowymi']],
+  ['XIII','Barwienie i malowanie drewna',['Oleje, woski i olejowoski','Bejce i wytrawy do drewna','Lakiery','Farby do drewna']],
+  ['XIV','Techniki zdobienia mebli',['Intarsja','Grawerowanie (relief)','Markieteria a intarsja','Mazerunek i fladrowanie','Okucia']],
+  ['XV','Restauracja i konserwacja mebli dawnych',['Identyfikacja obiektu','Ocena stanu technicznego i plan konserwatorski','Demontaż i montaż mebla','Rodzaje uszkodzeń, czyli nabyte wady mebla','Wzmacnianie struktury drewna','Naprawy i uzupełnianie ubytków','Usuwanie starych powłok, teoria','Usuwanie starych powłok, praktyka','Okleinowanie','Naprawa powierzchni okleinowanych','Rekonstrukcja elementu i detalu mebla','Przygotowanie powierzchni do wykończenia, teoria','Przygotowanie powierzchni do wykończenia, praktyka','Barwienie drewna','Techniki wykańczania mebli dawnych','Woskowanie mebli','Politurowanie mebli','Materiały i narzędzia w restauracji mebli','Konserwacja okuć','Meble tapicerowane','Restauracja mebla, przykładowe etapy prac','Archiwum konserwatora']],
+  ['XVI','Marketing w stolarstwie',['Wprowadzenie: Michał z Argo Woodcraft','Jaką działalność stolarską założyć?','Współpraca z klientami indywidualnymi i kontrahentami']],
+];
+
+const STAGES = [
+  {icon:'tree',t:'Poznajesz drewno',mods:['I','II','III','IV','V'],r:'Rozpoznajesz gatunki, rozumiesz wilgotność i kupujesz w tartaku dokładnie to, czego potrzebujesz.',d:'Pęknięcia i wypaczenia często zaczynają się już przy wyborze deski. Tu uczysz się tego unikać.'},
+  {icon:'chisel',t:'Ustawiasz warsztat i ręce',mods:['VI','VII'],r:'Ostrzysz dłuta i strugi, trasujesz, pracujesz bezpiecznie na maszynach i znasz kolejność obróbki.',d:'Stanowisko robocze, narzędzia ręczne, maszyny i elektronarzędzia. Z BHP na początek.'},
+  {icon:'dovetail',t:'Łączysz elementy',mods:['VIII','IX'],r:'Robisz czopy, wczepy i jaskółczy ogon. Dziesięć połączeń ręcznie i maszyną.',d:'Najdłuższy moduł kursu. To on odróżnia mebel trwały od takiego, który skrzypi po roku.'},
+  {icon:'pencil',t:'Projektujesz i budujesz',mods:['X','XI','XII'],r:'Rysujesz projekt w SketchUp, wyceniasz go i budujesz: ryczkę, szafkę, stół, łóżko, komodę.',d:'Osiem lekcji z projektami, od prostego zydelka po elementy gięte, i lekcja o wycenie.'},
+  {icon:'brush',t:'Wykańczasz i zdobisz',mods:['XIII','XIV'],r:'Dobierasz olej, wosk, bejcę albo lakier i dodajesz detale: intarsję, relief, okucia.',d:'Wykończenie decyduje o tym, czy mebel wygląda jak z pracowni.'},
+  {icon:'chair',t:'Odnawiasz i zarabiasz',mods:['XV','XVI'],r:'Odnawiasz stare meble metodami, których używają konserwatorzy, i wiesz, jak zacząć działalność stolarską.',d:'Ponad 20 lekcji renowacji i praktyczny moduł o pracy z klientami.'},
+];
+
+/* Mistrzowie: fakty ze starej strony sprzedazowej */
+const MASTERS = [
+  {name:'Przemysław Kowalczyk',short:'Przemek',img:'PRZEMEK-KOWALCZYK.webp',icon:'saw',role:'Stolarstwo, toczenie, snycerstwo',badge:'15+ lat warsztatu',
+   story:'Zostawił życie w mieście, żeby na wsi zbudować od podstaw własny warsztat Kępa Marzeń. Dziś przyjeżdżają do niego kursanci z Polski i z zagranicy.',
+   facts:[['award','Mistrz stolarstwa, toczenia i snycerstwa'],['home','Od ponad 15 lat prowadzi warsztat i kursy stacjonarne'],['scale','Egzaminator w Izbie Rzemiosła']]},
+  {name:'Karol Kopeć',short:'Karol',img:'KAROL-KOPEC.webp',icon:'tree',role:'Technologia drewna',badge:'Biegły sądowy',
+   story:'Przeszedł całą drogę: od stolarza, przez technika meblarstwa, po magistra inżyniera technologii drewna i konserwacji drewna zabytkowego.',
+   facts:[['book','Rzeczoznawca rzemiosła artystycznego i sztuki użytkowej'],['scale','Wieloletni biegły sądowy'],['award','Nauczyciel zawodu i egzaminator w Izbie Rzemiosła']]},
+  {name:'Marcin Tomaszewski',short:'Marcin',img:'MARCIN-TOMASZEWSKI.webp',icon:'dovetail',role:'Warsztat i konkursy',badge:'WorldSkills',
+   story:'Od lat kieruje warsztatami szkolnymi. Jego uczniowie odnoszą sukcesy w ogólnopolskim konkursie „Wyczarowane z Drewna”.',
+   facts:[['trophy','Ekspert międzynarodowych zawodów WorldSkills'],['users','Nauczyciel przedmiotów zawodowych'],['scale','Egzaminator w Izbie Rzemiosła']]},
+  {name:'Aneta Bukowska',short:'Aneta',img:'ANETA-BUKOWSKA.webp',icon:'chair',role:'Renowacja mebli',badge:'26+ lat renowacji',
+   story:'Od ponad 26 lat przywraca życie meblom zabytkowym. Pracuje w jednej z najstarszych pracowni renowacji mebli w Warszawie.',
+   facts:[['award','Mistrz stolarski'],['brush','Specjalizacja: konserwacja drewna zabytkowego'],['users','Nauczycielka zawodu w szkole drzewnej']]},
+  {name:'Łukasz Giergasz',short:'Łukasz',img:'LUKASZ-GIERGASZ.webp',icon:'chisel',role:'Narzędzia ręczne',badge:'Kanał 5m2',
+   story:'Miłośnik tradycyjnej pracy narzędziami ręcznymi. Na kanale YouTube „5m2” pokazuje renowację starych narzędzi i budowę mebli.',
+   facts:[['yt','Filmy, które obejrzały tysiące widzów'],['trophy','Ekspert konkursów WorldSkills Poland'],['hand','Promuje rzemiosło i pracę ręczną']]},
+];
+
+/* Opinie wideo: kanal YouTube Akademii Stolarstwa */
+const VIDEOS = [
+  {id:'bV2HahcgTXs',tag:'Opinie kursantów',len:'1:26',t:'Kursanci o kursie Magia Drewna'},
+  {id:'6EL5wSLE9Ss',tag:'Konkurs kursantów',len:'4:22',t:'„Kawa na ławę”: stoliki kawowe kursantów na jaskółczy ogon i płetwę'},
+  {id:'rxkcbZ6w2a8',tag:'Konkurs kursantów',len:'32:03',t:'Finał konkursu „Sen nocy letniej”: historie szafek nocnych'},
+  {id:'olDdCjfKJ_A',tag:'Podcast',len:'70:50',t:'To była prawdziwa Magia Drewna: rozmowa o pracach kursantów'},
+  {id:'PAVV9mK1KwU',tag:'Spotkanie na żywo',len:'',t:'Zajęcia z zalewania blatów żywicą w Festool'},
+];
+/* Opinie tekstowe: do uzupelnienia prawdziwymi opiniami z Google i Facebooka (wymagaja zgody autorow) */
+const REVIEWS = [
+  {name:'@ukaszcora1018',src:'YouTube',text:'Przerobiłem super materiał z Waszego kursu i wracam ciągle do różnych odcinków. (...) moje zamiłowanie do drewna zacząłem jakoś bardziej układać, ujarzmiać dzięki kursowi.'},
+  {name:'@WarsztatMożliwości',src:'YouTube',text:'W konsekwencji w firmie wprowadzamy dodatkową działalność z dziedziny stolarstwa, czyli wyrób mebli na wymiar (...) To jest również Wasza zasługa, Waszej akademii.'},
+  {name:'@SuperJorbi, uczestnik konkursu',src:'YouTube',text:'Konkurs, mimo że nie wygrałem, dał mi potężnego kopniaka motywacyjnego. Organizacja na najwyższym poziomie.'},
+  {name:'@krzysztofgg, uczestnik konkursu',src:'YouTube',text:'Uczestnictwo to była czysta przyjemność, duży szacunek dla wszystkich tworzących to wyjątkowe wydarzenie.'},
+  {name:'Kursant w filmie „Opinie naszych kursantów”',src:'YouTube',text:'Jeżeli mam powiedzieć w skali od 1 do 10, to powiem 11 na 10.'},
+];
+
+const lessonsBy = Object.fromEntries(MODULES.map(m=>[m[0],m[2].length]));
+const TOTAL = MODULES.reduce((a,m)=>a+m[2].length,0);
+const few = n => n%10>=2&&n%10<=4&&(n%100<10||n%100>=20);
+const plural = n => n===1?'lekcja':(few(n)?'lekcje':'lekcji');
+const pluralAcc = n => n===1?'lekcję':(few(n)?'lekcje':'lekcji');
+const pluralT = n => n===1?'temat':(few(n)?'tematy':'tematów');
+
+/* ===== PRZED I PO ===== */
+(function(){
+  const box=document.getElementById('ba'), list=box.querySelector('.ba__list');
+  function render(s){
+    list.innerHTML=BA.map(([ic,topic,a,b])=>`<li><span class="badge">${ico(ic)}</span><div><div class="ba__topic">${topic}<span class="ba__state">${s==='przed'?'przed':'po kursie'}</span></div><div class="ba__text">${s==='przed'?a:b}</div></div></li>`).join('');
+  }
+  render('przed');
+  box.querySelectorAll('[data-ba]').forEach(btn=>btn.addEventListener('click',()=>{
+    const s=btn.dataset.ba; if(box.dataset.state===s) return;
+    box.querySelectorAll('[data-ba]').forEach(b=>b.setAttribute('aria-pressed',b===btn));
+    box.classList.add('is-swapping');
+    setTimeout(()=>{box.dataset.state=s;render(s);requestAnimationFrame(()=>box.classList.remove('is-swapping'))},200);
+  }));
+})();
+
+/* ===== DLA KOGO ===== */
+(function(){
+  const list=document.querySelector('.tabs__list'), panel=document.getElementById('persona-panel');
+  list.innerHTML=PERSONAS.map((p,i)=>`<button role="tab" id="tab-${p.id}" aria-controls="persona-panel" aria-selected="${i===0}" tabindex="${i===0?0:-1}">${ico(p.icon)}${p.tab}</button>`).join('');
+  const tabs=[...list.children];
+  function show(i){
+    const p=PERSONAS[i];
+    tabs.forEach((t,j)=>{t.setAttribute('aria-selected',j===i);t.tabIndex=j===i?0:-1});
+    panel.setAttribute('aria-labelledby','tab-'+p.id);
+    panel.innerHTML=`<div class="persona"><div><h3>${p.title}</h3><p class="persona__text">${p.text}</p>
+      <div class="persona__goal"><span class="badge">${ico('trophy')}</span><div><b>Twój efekt</b>${p.goal}</div></div></div>
+      <div><h4>Co zyskujesz</h4><ul>${p.wins.map(w=>`<li>${ico('check')}${w}</li>`).join('')}</ul>
+      <h4>Zacznij od modułów</h4><ul>${p.mods.map(w=>`<li>${ico('book')}${w}</li>`).join('')}</ul></div></div>`;
+  }
+  tabs.forEach((t,i)=>{
+    t.addEventListener('click',()=>show(i));
+    t.addEventListener('keydown',e=>{
+      let k=null; if(e.key==='ArrowRight')k=(i+1)%tabs.length; if(e.key==='ArrowLeft')k=(i-1+tabs.length)%tabs.length;
+      if(k!==null){e.preventDefault();tabs[k].focus();show(k)}
+    });
+  });
+  show(0);
+})();
+
+/* ===== DROGA + TASMA ===== */
+(function(){
+  const ol=document.getElementById('stages');
+  ol.innerHTML=STAGES.map((s,i)=>{
+    const n=s.mods.reduce((a,m)=>a+lessonsBy[m],0);
+    const names=s.mods.map(r=>MODULES.find(m=>m[0]===r)[1]);
+    return `<li class="stage" data-reveal><div class="stage__no" aria-hidden="true">${String(i+1).padStart(2,'0')}</div>
+      <div><div class="stage__title"><span class="badge">${ico(s.icon)}</span><h3>${s.t}</h3></div><p class="stage__result">${s.r}</p><p>${s.d}</p></div>
+      <div class="stage__meta"><b>${n} ${pluralT(n)}</b><span>moduły ${s.mods[0]}${s.mods.length>1?' do '+s.mods.at(-1):''}</span><ul>${names.map(x=>`<li>${x}</li>`).join('')}</ul></div></li>`;
+  }).join('');
+  const fill=document.getElementById('tapeFill'), count=document.getElementById('tapeCount'), stages=[...ol.children];
+  function upd(){
+    const r=ol.getBoundingClientRect(), vh=innerHeight;
+    const p=Math.min(1,Math.max(0,(vh*.55-r.top)/r.height));
+    fill.style.clipPath=`inset(0 0 ${(1-p)*100}% 0)`;
+    const nn=Math.round(p*TOTAL); count.textContent=nn+' '+pluralT(nn);
+    stages.forEach(s=>s.classList.toggle('is-on',s.getBoundingClientRect().top<vh*.6));
+  }
+  let tk=false; addEventListener('scroll',()=>{if(!tk){tk=true;requestAnimationFrame(()=>{upd();tk=false})}},{passive:true}); addEventListener('resize',upd); upd();
+})();
+
+/* ===== RECZNIE / MASZYNA ===== */
+(function(){
+  const pairs=MODULES.find(m=>m[0]==='IX')[2].filter(l=>/, (ręcznie|maszynowo)$/.test(l));
+  const ul=document.getElementById('joints');
+  function render(w){
+    const key=w==='A'?'ręcznie':'maszynowo';
+    ul.innerHTML=pairs.filter(l=>l.endsWith(key)).map((l,i)=>`<li style="animation-delay:${i*40}ms">${ico(w==='A'?'hand':'gear')}${l.replace(/, (ręcznie|maszynowo)$/,'')}</li>`).join('');
+  }
+  render('A');
+  document.querySelectorAll('[data-way]').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('[data-way]').forEach(x=>x.setAttribute('aria-pressed',x===b)); render(b.dataset.way);
+  }));
+})();
+
+/* ===== MODAL: galeria i filmy ===== */
+const modal=(function(){
+  const d=document.createElement('dialog'); d.className='modal'; d.setAttribute('aria-label','Podgląd');
+  d.innerHTML=`<button type="button" class="modal__close" aria-label="Zamknij">${ico('x')}</button><div class="modal__body"></div><p></p>`;
+  document.body.appendChild(d);
+  d.querySelector('.modal__close').addEventListener('click',()=>d.close());
+  d.addEventListener('click',e=>{if(e.target===d)d.close()});
+  d.addEventListener('close',()=>{d.querySelector('.modal__body').innerHTML=''});
+  return d;
+})();
+function openModal(html,cap){modal.querySelector('.modal__body').innerHTML=html;modal.querySelector('p').textContent=cap||'';modal.showModal()}
+document.querySelectorAll('#gallery button').forEach(b=>b.addEventListener('click',()=>openModal(`<img src="${b.dataset.full}" alt="${esc(b.dataset.cap)}">`,b.dataset.cap)));
+
+/* ===== MISTRZOWIE ===== */
+(function(){
+  const box=document.getElementById('masters');
+  box.innerHTML=MASTERS.map((m,i)=>`<article class="master${i===0?' is-active':''}">
+    <button class="master__btn" type="button" aria-expanded="${i===0}" aria-label="Pokaż: ${m.name}"></button>
+    <div class="master__closed" aria-hidden="true"><img src="img/${m.img}" alt=""><span>${m.short}</span><small>${m.role}</small></div>
+    <div class="master__open">
+      <div class="master__portrait"><img src="img/${m.img}" alt="${m.name}" loading="lazy" width="390" height="390"><span class="master__badge">${m.badge}</span></div>
+      <div><h3>${m.name}</h3><div class="master__role">${ico(m.icon)}${m.role}</div><p class="master__story">${m.story}</p>
+      <ul class="master__facts">${m.facts.map(([ic,f])=>`<li>${ico(ic)}${f}</li>`).join('')}</ul></div>
+    </div></article>`).join('');
+  const items=[...box.children];
+  const act=i=>items.forEach((el,j)=>{el.classList.toggle('is-active',i===j);el.querySelector('.master__btn').setAttribute('aria-expanded',i===j)});
+  items.forEach((el,i)=>{
+    el.querySelector('.master__btn').addEventListener('click',()=>act(i));
+    let t; el.addEventListener('mouseenter',()=>{if(matchMedia('(hover:hover) and (min-width:1025px)').matches){clearTimeout(t);t=setTimeout(()=>act(i),220)}});
+    el.addEventListener('mouseleave',()=>clearTimeout(t));
+  });
+})();
+
+/* ===== OPINIE: MULTISLIDER ===== */
+(function(){
+  const vt=document.getElementById('videoTrack'), tt=document.getElementById('textTrack');
+  const card=(x,hidden)=>`<button class="vcard" type="button" data-id="${x.id}" data-t="${esc(x.t)}"${hidden?' tabindex="-1" aria-hidden="true"':''}>
+    <span class="vcard__thumb"><img src="img/yt/${x.id}.webp" alt="" loading="lazy"><span class="vcard__tag">${x.tag}</span><span class="vcard__play"><svg viewBox="0 0 24 24"><path d="M6 4v16l14-8z"/></svg></span>${x.len?`<span class="vcard__len">${x.len}</span>`:''}</span>
+    <span class="vcard__title">${x.t}</span></button>`;
+  const tcard=(r,hidden)=>r.todo
+    ?`<article class="tcard tcard--todo"${hidden?' aria-hidden="true"':''}><div class="stars" aria-hidden="true">★★★★★</div><blockquote>Tu wstawiamy prawdziwą opinię z ${r.src}. Najlepiej taką, która mówi o efekcie: pierwszy mebel, odnowiona komoda, pierwsze zlecenie.</blockquote><footer><span class="av">?</span><span><b>Imię kursanta</b><br>opinia z ${r.src}</span></footer></article>`
+    :`<article class="tcard"${hidden?' aria-hidden="true"':''}>${r.stars?`<div class="stars" aria-label="Ocena ${r.stars} na 5">${'★'.repeat(r.stars)}</div>`:`<div class="stars" style="color:var(--rust)">${ico('yt')}</div>`}<blockquote>${esc(r.text)}</blockquote><footer><span class="av">${esc(r.name.replace('@','')[0].toUpperCase())}</span><span><b>${esc(r.name)}</b><br>${r.src==='YouTube'?'komentarz na YouTube':'opinia z '+r.src}</span></footer></article>`;
+  vt.innerHTML=VIDEOS.map(x=>card(x,false)).join('')+VIDEOS.map(x=>card(x,true)).join('');
+  tt.innerHTML=REVIEWS.map(r=>tcard(r,false)).join('')+REVIEWS.map(r=>tcard(r,true)).join('');
+  vt.querySelectorAll('.vcard').forEach(b=>b.addEventListener('click',()=>{
+    /* YouTube wymaga adresu strony; z pliku (file://) odtwarzacz zwraca blad 153, wtedy otwieramy film na YouTube */
+    if(location.protocol==='file:'){window.open('https://www.youtube.com/watch?v='+b.dataset.id,'_blank','noopener');return}
+    openModal(`<div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/${b.dataset.id}?autoplay=1&rel=0" title="${b.dataset.t}" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>`,b.dataset.t);
+  }));
+  const pb=document.getElementById('pauseAll');
+  pb.addEventListener('click',()=>{
+    const on=pb.getAttribute('aria-pressed')!=='true'; pb.setAttribute('aria-pressed',on);
+    document.querySelectorAll('.marquee,.ruler').forEach(m=>m.classList.toggle('is-paused',on));
+    pb.querySelector('span').textContent=on?'Wznów przewijanie':'Zatrzymaj przewijanie';
+  });
+})();
+
+/* ===== PROGRAM ===== */
+(function(){
+  const wrap=document.getElementById('modules'), input=document.getElementById('progSearch'), stats=document.getElementById('progStats');
+  wrap.innerHTML=MODULES.map(([r,t,ls])=>`<details class="module"><summary><span class="module__roman">${r||'0'}</span><span class="module__title">${t}</span><span class="module__count">${ls.length} ${pluralT(ls.length)}</span>${ico('down')}</summary><ol>${ls.map(l=>`<li>${esc(l)}</li>`).join('')}</ol></details>`).join('');
+  const mods=[...wrap.children];
+  const base=`<b>${MODULES.length-1} modułów</b>, <b>${TOTAL} tematów</b> i <b>150 lekcji</b>, bo część tematów ma kilka części`;
+  stats.innerHTML=base;
+  const norm=s=>s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/ł/g,'l');
+  /* slowa uzywane na stronie, ktorych nie ma w tytulach lekcji */
+  const SYN={renowac:'restaurac',odnaw:'restaurac',dab:'gatunk',dęb:'gatunk',buk:'gatunk',jesion:'gatunk',orzech:'gatunk',sosn:'iglast',swierk:'iglast',szuflad:'fronty'};
+  const direct=q=>MODULES.some(m=>norm(m[1]).includes(q)||m[2].some(l=>norm(l).includes(q)));
+  input.addEventListener('input',()=>{
+    let q=norm(input.value.trim()); let hits=0;
+    if(q.length>=3&&!direct(q)){const k=Object.keys(SYN).find(k=>q.startsWith(norm(k))||norm(k).startsWith(q));if(k)q=SYN[k]}
+    mods.forEach((m,i)=>{
+      let any=false;
+      m.querySelectorAll('li').forEach(li=>{const h=q&&norm(li.textContent).includes(q);li.classList.toggle('hit',!!h);if(h){any=true;hits++}});
+      const titleHit=q&&norm(MODULES[i][1]).includes(q);
+      m.classList.toggle('is-hidden',!!q&&!any&&!titleHit);
+      m.open=!!q&&(any||!!titleHit);
+      if(titleHit){m.querySelectorAll('li').forEach(li=>{if(!li.classList.contains('hit')){li.classList.add('hit');hits++}})}
+    });
+    stats.innerHTML=q?(hits?`Znaleziono <b>${hits}</b> ${pluralT(hits)}`:'Brak tematu o tej nazwie. Spróbuj krótszego słowa.'):base;
+  });
+})();
+
+/* ===== FORMULARZ (makieta) ===== */
+document.getElementById('leadForm').addEventListener('submit',e=>{
+  e.preventDefault(); const f=e.target, msg=document.getElementById('formMsg');
+  const bad=[...f.elements].filter(el=>el.willValidate&&!el.checkValidity());
+  f.querySelectorAll('input').forEach(el=>el.removeAttribute('aria-invalid'));
+  if(bad.length){bad.forEach(el=>el.setAttribute('aria-invalid','true'));bad[0].focus();msg.style.color='#9a3b08';msg.textContent='Uzupełnij imię, poprawny e-mail i zaznacz zgodę.';return}
+  msg.style.color='';msg.textContent='Podgląd makiety: formularz zostanie podpięty do listy mailowej Akademii. Po podpięciu lekcje przyjdą na podany e-mail.';f.reset();
+});
+
+/* ===== OKNO SPRZEDAZY + LICZNIK ===== */
+(function(){
+  const bar=document.getElementById('salebar'), status=document.getElementById('priceStatus'), buy=document.getElementById('buyBtn');
+  const cd=k=>document.querySelector(`[data-cd="${k}"]`);
+  function tick(){
+    const now=new Date(), ph=now<SALE_START?'before':(now<=SALE_END?'open':'after');
+    bar.querySelectorAll('[data-sale]').forEach(s=>s.hidden=s.dataset.sale!==ph);
+    const diff=Math.max(0,(ph==='before'?SALE_START:SALE_END)-now);
+    const d=Math.floor(diff/864e5),h=Math.floor(diff/36e5)%24,m=Math.floor(diff/6e4)%60,s=Math.floor(diff/1e3)%60;
+    [['d',d],['h',h],['m',m],['s',s]].forEach(([k,v])=>cd(k).textContent=String(v).padStart(2,'0'));
+    const txt=bar.querySelector('[data-countdown-text]'); if(txt) txt.textContent=(d?`${d} ${d===1?'dzień':'dni'} `:'')+`${h} godz.${d?'':' '+m+' min'}`;
+    if(ph==='before'){status.textContent='Sprzedaż rusza za';buy.textContent='Zapisz się na start sprzedaży';buy.href='#probka'}
+    else if(ph==='open'){status.textContent='Do końca sprzedaży zostało';buy.textContent='Dołącz do kursu';buy.href=BUY_URL}
+    else{status.textContent='Sprzedaż zamknięta';buy.textContent='Zapisz się na kolejne otwarcie';buy.href='#probka';document.getElementById('countdown').hidden=true}
+    document.querySelectorAll('[data-hide-before]').forEach(a=>a.hidden=ph==='before');
+    document.querySelectorAll('[data-cta]').forEach(a=>{a.textContent=ph==='open'?'Dołącz do kursu':(ph==='before'?'Zapisz się na start':'Zapisz się na listę');a.href=ph==='open'?'#cena':'#probka'});
+  }
+  tick(); setInterval(tick,1000);
+})();
+
+/* ===== MENU MOBILNE ===== */
+(function(){
+  const t=document.querySelector('.nav__toggle'), m=document.getElementById('mnav');
+  const set=o=>{t.setAttribute('aria-expanded',o);m.hidden=!o};
+  t.addEventListener('click',()=>set(m.hidden));
+  m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>set(false)));
+  addEventListener('keydown',e=>{if(e.key==='Escape'&&!m.hidden){set(false);t.focus()}});
+})();
+
+/* ===== WEJSCIA, LICZNIKI, NAWIGACJA ===== */
+(function(){
+  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const els=document.querySelectorAll('[data-reveal]');
+  if(reduce||!('IntersectionObserver' in window)){els.forEach(e=>e.classList.add('is-in'))}
+  else{
+    const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+    els.forEach(e=>{
+      const sibs=[...e.parentElement.children].filter(x=>x.hasAttribute('data-reveal'));
+      if(sibs.length>2) e.style.transitionDelay=(sibs.indexOf(e)%4)*80+'ms';
+      io.observe(e);
+    });
+  }
+  const run=el=>{const to=+el.dataset.count,t0=performance.now(),dur=1400;const step=t=>{const p=Math.min(1,(t-t0)/dur);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)};
+  if(!reduce&&'IntersectionObserver' in window){
+    const io2=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){run(e.target);io2.unobserve(e.target)}}),{threshold:.6});
+    document.querySelectorAll('[data-count]').forEach(c=>io2.observe(c));
+  }
+  const nav=document.getElementById('nav'), st=document.getElementById('stickyCta'), price=document.getElementById('cena'), foot=document.querySelector('footer.site');
+  function f(){
+    nav.classList.toggle('is-stuck',scrollY>10);
+    const pr=price.getBoundingClientRect();
+    const fr=foot.getBoundingClientRect();
+    st.classList.toggle('is-on',scrollY>700&&!(pr.top<innerHeight&&pr.bottom>0)&&fr.top>innerHeight);
+  }
+  addEventListener('scroll',f,{passive:true}); f();
+})();
+</script>
+</body>
+</html>
