@@ -7,9 +7,7 @@
 <title>Kurs stolarstwa online Magia Drewna - Akademia Stolarstwa</title>
 <meta name="description" content="Kurs stolarstwa online od podstaw. 150 lekcji wideo i ponad 50 godzin materiału, 5 instruktorów, połączenia ręcznie i maszynowo, projekty mebli krok po kroku i renowacja.">
 <link rel="icon" href="img/favicon.jpg" type="image/jpeg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css">
 <style>
 :root{
   --ink:#291c0e;          /* braz marki: tekst na jasnym */
@@ -310,6 +308,7 @@ dialog.modal p{color:var(--cream);text-align:center;margin:12px 0 0}
 .stars{color:#c06a00;letter-spacing:2px;margin-bottom:8px}
 .tcard--todo{border-style:dashed;background:#fffaf3}
 .tcard--todo blockquote{font-family:var(--sans);font-size:15px;color:var(--text-2)}
+.reviews-note{margin:28px 0 0;font-size:13.5px;color:var(--text-2);max-width:820px}
 .slider-ctrl button{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 16px;font:600 14px var(--sans);cursor:pointer;color:var(--ink)}
 .slider-ctrl .ico{width:18px;height:18px}
 
@@ -380,6 +379,8 @@ dialog.modal p{color:var(--cream);text-align:center;margin:12px 0 0}
 .form .consent input{margin-top:3px;width:18px;height:18px;flex:none;accent-color:var(--rust)}
 .form .consent a{color:var(--rust)}
 .form [aria-invalid="true"]{border-color:#9a3b08;outline:2px solid #9a3b08}
+.form__legal{font-size:12.5px;line-height:1.5;color:var(--text-2);margin:0}
+.form__legal a{color:var(--rust)}
 .form__msg{font-size:15px;color:var(--ok);font-weight:600;min-height:1.4em}
 
 /* cena */
@@ -389,7 +390,7 @@ dialog.modal p{color:var(--cream);text-align:center;margin:12px 0 0}
 .stack li span:first-child{display:flex;gap:10px;align-items:center}
 .stack li .ico{width:18px;height:18px;color:var(--gold)}
 .stack li span:last-child{white-space:nowrap;color:var(--gold)}
-.stack li.sum{border-bottom:0;font-weight:600;color:#fff}
+.stack-note{margin:18px 0 0;font-size:15px;color:var(--cream-2)}
 .price-card{background:#fffaf2;color:var(--ink);border-radius:var(--radius-l);padding:36px;box-shadow:0 30px 60px -20px rgba(0,0,0,.7);position:relative}
 .price-card > *{position:relative}
 .price-card__status{font-size:14px;font-weight:600;color:var(--rust);margin-bottom:8px}
@@ -575,7 +576,7 @@ footer.site a{color:var(--cream)}
 
 <div class="salebar" id="salebar" role="status">
   <span data-sale="before">IV edycja kursu rusza <b>14 listopada</b>. Do tego czasu obejrzysz za darmo 2 lekcje. <a href="#probka">Odbierz lekcje</a></span>
-  <span data-sale="open" hidden>Sprzedaż otwarta. Do zamknięcia zostało <b data-countdown-text>...</b> <a href="#cena">Zobacz cenę</a></span>
+  <span data-sale="open" hidden>Sprzedaż otwarta do 27 listopada 2026, godz. 23:59. Do zamknięcia zostało <b data-countdown-text>...</b> <a href="#cena">Zobacz cenę</a></span>
   <span data-sale="after" hidden>Sprzedaż zamknięta. Zapisz się, a damy znać przed kolejnym otwarciem. <a href="#probka">Zapisz się</a></span>
 </div>
 
@@ -800,6 +801,7 @@ footer.site a{color:var(--cream)}
   </div>
   <div class="marquee" data-reveal><div class="marquee__track" id="videoTrack"></div></div>
   <div class="marquee marquee--rev" data-reveal><div class="marquee__track" id="textTrack"></div></div>
+  <div class="wrap"><p class="reviews-note">Jak sprawdzamy opinie: publikujemy wypowiedzi osób, które kupiły kurs Magia Drewna. Każdą sprawdzamy w naszej liście zamówień i publikujemy za zgodą autora. Wypowiedzi z YouTube i Facebooka linkujemy do źródła. Opinii nie zmieniamy, czasem skracamy, co oznaczamy „(...)”.</p></div>
 </section>
 
 <!-- POROWNANIE -->
@@ -818,7 +820,7 @@ footer.site a{color:var(--cream)}
         <tbody role="rowgroup">
           <tr role="row"><th scope="row" role="rowheader">Ścieżka od zera do gotowego mebla</th><td role="cell" class="us" data-label="Magia Drewna"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span><span class="note">16 modułów w kolejności pracy w warsztacie</span></td><td role="cell" data-label="Darmowe filmy"><span class="st n"><svg class="ico"><use href="#i-x"/></svg>Nie</span><span class="note">Sam układasz kolejność</span></td><td role="cell" data-label="Kurs stacjonarny"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">W zakresie jednego tematu</span></td><td role="cell" data-label="Książki"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">Bez obrazu ruchu</span></td></tr>
           <tr role="row"><th scope="row" role="rowheader">Pytania do praktyków</th><td role="cell" class="us" data-label="Magia Drewna"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span><span class="note">Zamknięta grupa z instruktorami</span></td><td role="cell" data-label="Darmowe filmy"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">Komentarze, bez gwarancji odpowiedzi</span></td><td role="cell" data-label="Kurs stacjonarny"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span><span class="note">Na miejscu</span></td><td role="cell" data-label="Książki"><span class="st n"><svg class="ico"><use href="#i-x"/></svg>Nie</span></td></tr>
-          <tr role="row"><th scope="row" role="rowheader">Powrót do lekcji, gdy zapomnisz</th><td role="cell" class="us" data-label="Magia Drewna"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span><span class="note">Przez 5 lat</span></td><td role="cell" data-label="Darmowe filmy"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span></td><td role="cell" data-label="Kurs stacjonarny"><span class="st n"><svg class="ico"><use href="#i-x"/></svg>Nie</span><span class="note">Zostają notatki</span></td><td role="cell" data-label="Książki"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span></td></tr>
+          <tr role="row"><th scope="row" role="rowheader">Powrót do lekcji, gdy zapomnisz</th><td role="cell" class="us" data-label="Magia Drewna"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span><span class="note">Przez 5 lat od zakupu</span></td><td role="cell" data-label="Darmowe filmy"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span></td><td role="cell" data-label="Kurs stacjonarny"><span class="st n"><svg class="ico"><use href="#i-x"/></svg>Nie</span><span class="note">Zostają notatki</span></td><td role="cell" data-label="Książki"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span></td></tr>
           <tr role="row"><th scope="row" role="rowheader">Instruktor patrzy Ci na ręce</th><td role="cell" class="us" data-label="Magia Drewna"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">Na 2 spotkaniach w roku</span></td><td role="cell" data-label="Darmowe filmy"><span class="st n"><svg class="ico"><use href="#i-x"/></svg>Nie</span></td><td role="cell" data-label="Kurs stacjonarny"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span><span class="note">To największy plus</span></td><td role="cell" data-label="Książki"><span class="st n"><svg class="ico"><use href="#i-x"/></svg>Nie</span></td></tr>
           <tr role="row"><th scope="row" role="rowheader">Drewno, renowacja i wycena w jednym miejscu</th><td role="cell" class="us" data-label="Magia Drewna"><span class="st y"><svg class="ico"><use href="#i-check"/></svg>Tak</span><span class="note">W jednym kursie</span></td><td role="cell" data-label="Darmowe filmy"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">Rozproszone po kanałach</span></td><td role="cell" data-label="Kurs stacjonarny"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">Osobne kursy</span></td><td role="cell" data-label="Książki"><span class="st p"><svg class="ico"><use href="#i-minus"/></svg>Częściowo</span><span class="note">Osobne tytuły</span></td></tr>
           <tr role="row"><th scope="row" role="rowheader">Koszt</th><td role="cell" class="us" data-label="Magia Drewna"><span class="st price">2990 zł</span><span class="note">Za całość, także na raty</span></td><td role="cell" data-label="Darmowe filmy"><span class="st price">0 zł</span><span class="note">Ale dużo czasu na szukanie</span></td><td role="cell" data-label="Kurs stacjonarny"><span class="st price">990 do 1790 zł</span><span class="note">Za jeden temat, plus dojazd</span></td><td role="cell" data-label="Książki"><span class="st price">Różnie</span><span class="note">Zależnie od liczby tytułów</span></td></tr>
@@ -863,9 +865,10 @@ footer.site a{color:var(--cream)}
       <form class="form" id="leadForm" novalidate>
         <label for="fImie">Imię<input type="text" id="fImie" name="imie" autocomplete="given-name" required></label>
         <label for="fEmail">E-mail<input type="email" id="fEmail" name="email" autocomplete="email" required></label>
-        <label class="consent" for="fZgoda"><input type="checkbox" id="fZgoda" name="zgoda" required> <span>Chcę dostać lekcje i wiadomości o kursie. Mogę wypisać się w każdej chwili. Administratorem danych jest Akademia Stolarstwa, szczegóły w <a href="https://akademiastolarstwa.pl/polityka-prywatnosci/">polityce prywatności</a>.</span></label>
+        <label class="consent" for="fZgoda"><input type="checkbox" id="fZgoda" name="zgoda" required> <span>Chcę dostać 2 darmowe lekcje i maile o kursie Magia Drewna, w tym informację o starcie i zamknięciu sprzedaży. Wypiszesz się jednym kliknięciem w każdym mailu.</span></label>
         <button class="btn btn--primary" type="submit">Wyślij mi lekcje</button>
         <div class="form__msg" id="formMsg" role="status" aria-live="polite"></div>
+        <p class="form__legal">Administratorem Twoich danych jest Akademia Stolarstwa Joanna Kowalczyk, Kępa Niemojewska 19a, 26-902 Grabów nad Pilicą. Imię i e-mail wykorzystamy, żeby wysłać Ci lekcje i maile o kursie (na podstawie Twojej zgody, którą możesz wycofać w każdej chwili). Maile wysyłamy przez MailerLite. Dane trzymamy do wypisania się. Masz prawo dostępu do danych, ich poprawienia, usunięcia i skargi do Prezesa UODO. Więcej w <a href="https://akademiastolarstwa.pl/polityka-prywatnosci/">polityce prywatności</a>.</p>
       </form>
     </div>
   </div>
@@ -877,18 +880,18 @@ footer.site a{color:var(--cream)}
     <div data-reveal>
       <div class="kicker">Inwestycja</div>
       <h2>Tematy pięciu kursów stacjonarnych w jednym kursie online</h2>
-      <p class="lead" style="margin-top:16px">Tyle kosztują osobno kursy stacjonarne z tych tematów:</p>
+      <p class="lead" style="margin-top:16px">Osobno te tematy instruktorzy prowadzą na pięciu kursach stacjonarnych:</p>
       <ul class="stack">
         <li><span><svg class="ico"><use href="#i-saw"/></svg>Kurs stolarski podstawowy</span><span>1790 zł</span></li>
         <li><span><svg class="ico"><use href="#i-dovetail"/></svg>Kurs połączeń</span><span>1690 zł</span></li>
         <li><span><svg class="ico"><use href="#i-chisel"/></svg>Praca narzędziami ręcznymi</span><span>1200 zł</span></li>
         <li><span><svg class="ico"><use href="#i-chair"/></svg>Renowacja mebli</span><span>990 zł</span></li>
         <li><span><svg class="ico"><use href="#i-tree"/></svg>Suszarnictwo</span><span>1600 zł</span></li>
-        <li class="sum"><span>Razem, osobno</span><span>7270 zł</span></li>
       </ul>
+      <p class="stack-note">Ceny kursów stacjonarnych według cenników z 15.10.2026. Kurs stacjonarny daje coś, czego nie da online: instruktora przy Twoim stanowisku i mebel, który zabierasz do domu. Kurs online daje te same tematy w jednym miejscu, do obejrzenia tyle razy, ile potrzebujesz.</p>
       <div class="guarantee">
         <span class="badge"><svg class="ico"><use href="#i-shield"/></svg></span>
-        <p><b>Gwarancja zwrotu pieniędzy.</b> Jeśli uznasz, że kurs nie spełnia Twoich oczekiwań, napisz do nas w ciągu 14 dni od zakupu, a zwrócimy pełną kwotę.</p>
+        <p><b>Gwarancja zwrotu pieniędzy przez 14 dni.</b> Jeśli w ciągu 14 dni od zakupu uznasz, że kurs nie jest dla Ciebie, napisz na kontakt@akademiastolarstwa.pl. Zwrócimy całą zapłaconą kwotę w ciągu 14 dni, a dostęp do kursu wygaśnie. Nie musisz podawać powodu. Szczegóły w regulaminie.</p>
       </div>
     </div>
     <div class="price-card" data-reveal>
@@ -901,9 +904,9 @@ footer.site a{color:var(--cream)}
       <a class="btn btn--primary" href="#" id="buyBtn">Dołącz do kursu</a>
       <ul class="incl">
         <li><svg class="ico"><use href="#i-check"/></svg>150 lekcji wideo w 16 modułach, ponad 50 godzin</li>
-        <li><svg class="ico"><use href="#i-check"/></svg>Dostęp od razu po płatności, na 5 lat</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Dostęp od razu po płatności, przez 5 lat od zakupu</li>
         <li><svg class="ico"><use href="#i-check"/></svg>Zamknięta grupa z instruktorami</li>
-        <li><svg class="ico"><use href="#i-check"/></svg>Dwa spotkania na żywo w roku</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Dwa spotkania na żywo w roku, w okresie dostępu</li>
         <li><svg class="ico"><use href="#i-check"/></svg>Konkursy z nagrodami i zniżki u partnerów</li>
         <li><svg class="ico"><use href="#i-check"/></svg>Certyfikat ukończenia na życzenie</li>
         <li><svg class="ico"><use href="#i-check"/></svg>Faktura VAT, także na firmę</li>
@@ -926,14 +929,14 @@ footer.site a{color:var(--cream)}
     <div class="faq" data-reveal>
       <details><summary>Nie mam żadnego doświadczenia z drewnem. Dam radę?</summary><p>Tak. Kurs zaczyna się od tego, czym jest drewno i jak się zachowuje, a dopiero potem przechodzi do narzędzi i połączeń. Lekcje idą krok po kroku, a w grupie możesz zapytać o wszystko.</p></details>
       <details><summary>Jakie narzędzia muszę mieć na start?</summary><p>Nie potrzebujesz parku maszynowego. Dziesięć głównych połączeń pokazujemy też narzędziami ręcznymi, a w module o narzędziach mówimy, od czego zacząć i na co zwrócić uwagę przy zakupie. Zniżki u partnerów pomogą kupić taniej.</p></details>
-      <details><summary>Kiedy dostanę dostęp i na jak długo?</summary><p>Od razu po zaksięgowaniu płatności. Dostęp masz na 5 lat, więc możesz wracać do lekcji przy każdym nowym projekcie.</p></details>
+      <details><summary>Kiedy dostanę dostęp i na jak długo?</summary><p>Od razu po zaksięgowaniu płatności. Dostęp masz przez 5 lat od zakupu, więc możesz wracać do lekcji przy każdym nowym projekcie.</p></details>
       <details><summary>Mieszkam w bloku i nie mam warsztatu. Czy to ma sens?</summary><p>Tak. Na start wystarczy kąt w piwnicy albo garażu. Kurs pokazuje pracę narzędziami ręcznymi, które nie potrzebują dużej przestrzeni ani hałaśliwych maszyn, a w osobnych lekcjach omawiamy stanowisko robocze i budowę stołu warsztatowego.</p></details>
       <details><summary>Ile kosztuje kurs?</summary><p>2990 zł z VAT. Możesz zapłacić jednorazowo albo w ratach. Cenę widzisz na tej stronie, bez zapisywania się i bez rozmowy z handlowcem.</p></details>
       <details><summary>Czy da się nauczyć stolarstwa online?</summary><p>Teorii, kolejności pracy i techniki tak, i to szybciej niż z przypadkowych filmów, bo każdą lekcję możesz zatrzymać i obejrzeć jeszcze raz. Rękę wyrabiasz w swoim warsztacie. Gdy coś nie wychodzi, wrzucasz zdjęcie do grupy, a dwa razy w roku możesz pracować pod okiem instruktorów na spotkaniu na żywo.</p></details>
       <details><summary>Czy kurs pomoże mi zarabiać na stolarstwie?</summary><p>Daje podstawy, których potrzebuje stolarz: technologię, połączenia, wykończenie i renowację. Do tego lekcja o wycenie projektu i moduł o tym, jaką działalność założyć i jak współpracować z klientami. Samo zarabianie zależy od Twojej praktyki i decyzji.</p></details>
       <details><summary>Czy mogę zapłacić w ratach?</summary><p>Tak. Płatność ratalną wybierasz przy zamówieniu, obsługuje ją system TPay. Dostęp do kursu otwiera się po zaksięgowaniu płatności.</p></details>
       <details><summary>Czy dostanę fakturę i certyfikat?</summary><p>Tak. Wystawiamy fakturę VAT (23%), także na firmę. Certyfikat ukończenia kursu wystawimy na Twoją prośbę.</p></details>
-      <details><summary>Co, jeśli kurs mi nie podpasuje?</summary><p>Masz 14 dni od zakupu na decyzję. Jeśli kurs nie spełni Twoich oczekiwań, napisz do nas w tym czasie, a zwrócimy pełną kwotę.</p></details>
+      <details><summary>Co, jeśli kurs mi nie podpasuje?</summary><p>Masz 14 dni od zakupu na decyzję. Napisz na kontakt@akademiastolarstwa.pl z adresu użytego przy zamówieniu, a zwrócimy całą kwotę w ciągu 14 dni, tą samą metodą płatności. Przy ratach zwrot rozliczamy z operatorem płatności. To dobrowolna gwarancja Akademii, dodatkowa do Twoich praw z ustawy.</p></details>
       <details><summary>Dlaczego sprzedaż trwa tylko kilkanaście dni?</summary><p>Sprzedaż to dla nas dużo pracy. Po jej zamknięciu skupiamy się na kursantach: odpowiadamy w grupie, prowadzimy kursy stacjonarne i spotkania. Dlatego zapisy otwieramy tylko na 14 dni. Jeśli nie zdążysz, zapisz się na listę, a damy znać przed kolejnym otwarciem.</p></details>
     </div>
   </div>
